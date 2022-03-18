@@ -1,0 +1,1191 @@
+Note that I am now building xsdk - the idea being to build xsdk first - then xsdk-examples.
+
+
+shuds@login25:spack-xsdk$ spack install xsdk%gcc@11.2.0
+==> Warning: Missing a source id for xsdk@0.7.0
+==> cmake@3.22.0 : has external module in ['cmake/3.22.0']
+[+] /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0 (external cmake-3.22.0-faioohzbenshbpvizgwor5fk5ify5zea)
+==> cray-mpich@8.1.13 : has external module in ['cray-mpich/8.1.13', 'cudatoolkit/11.5']
+[+] /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1 (external cray-mpich-8.1.13-qju2ytuheqgg6zjsu7qqxnnqa22fqodm)
+==> hdf5@1.12.1.1 : has external module in ['cray-hdf5-parallel/1.12.1.1']
+[+] /opt/cray/pe/hdf5-parallel/1.12.1.1 (external hdf5-1.12.1.1-n4vev2eijxvkmvawimvgn7hz5royyhmc)
+==> cray-libsci@21.08.1.2 : has external module in ['cray-libsci/21.08.1.2']
+[+] /opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64 (external cray-libsci-21.08.1.2-onzzhizl63xj72v3yq76pprtorqer7rv)
+[+] /usr (external diffutils-3.6-l3lpsetnlxyumavq6k4uzi7tp7pbvvkw)
+==> python@3.9.7 : has external module in ['python/3.9-anaconda-2021.11']
+[+] /global/common/software/nersc/pm-2021q4/sw/python/3.9-anaconda-2021.11 (external python-3.9.7-cl54a7o7py426fuwltbb35tswqflc5ub)
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/zlib-1.2.11-ekeupmdcqoimgroigtctln7tqkyh6pdm
+[+] /usr (external bzip2-1.0.6-c3mhclohvb5m76wazqviskyhfmww3b3m)
+[+] /usr (external m4-1.4.18-j2ty5m5pkz5jo23rmr55ntbalpmta4dm)
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/pkgconf-1.8.0-kiw5m6f32d3hodo632qfgetsjk6vms7w
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/util-macros-1.19.3-w4jpg7oett64sxqw2lpirutnwgrddgt5
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libiconv-1.16-l4kbzvfipqrntybop73s6hhtyif53ysm
+[+] /usr (external xz-5.2.3-xd5oqr6xuwwfpdeka5emeubgrqus4jz3)
+[+] /usr (external ncurses-6.1-67sz4auzlr63x2wvc7ctutifwse3rnxk)
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/gsl-2.7-2p3pcjckzogek2dubph7q4yd5msjuhxt
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/berkeley-db-18.1.40-xvr7zsb5eira5zo2euofbchzubhfvcqe
+[+] /usr (external readline-7.0-4nkx33edjh2swiaeflbcsck3w2yphw2g)
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/autoconf-archive-2019.01.06-446plgvhuvjdio3kd4ir2ax7gi5hbcud
+==> fftw@3.3.8.12 : has external module in ['cray-fftw/3.3.8.12']
+[+] /opt/cray/pe/fftw/3.3.8.12/x86_milan (external fftw-3.3.8.12-jbkmrqulbszcbd7lxjozr26ymhnd2eaf)
+==> py-numpy@1.20.3 : has external module in ['python/3.9-anaconda-2021.11']
+[+] /global/common/software/nersc/pm-2021q4/sw/python/3.9-anaconda-2021.11 (external py-numpy-1.20.3-j7wmkmnq6gnukoyts5mnlgiewrreo3pk)
+==> py-mpi4py@3.1.3 : has external module in ['python/3.9-anaconda-2021.11']
+[+] /global/common/software/nersc/pm-2021q4/sw/python/3.9-anaconda-2021.11 (external py-mpi4py-3.1.3-hzl5hy3f7jhcx5uoshfyep4rg37fud5c)
+==> py-setuptools@58.0.4 : has external module in ['python/3.9-anaconda-2021.11']
+[+] /global/common/software/nersc/pm-2021q4/sw/python/3.9-anaconda-2021.11 (external py-setuptools-58.0.4-54sfxvuo2c2ltglxu6uv2jmaci7qqf6p)
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/zfp-0.5.5-li5u3vuzijjqn5yyjh2v2fak42uuehwf
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/muparser-2.2.6.1-sjvraqgbspjyxnoqr7gru2elkx2kokq4
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/metis-5.1.0-lxe5bhakcmkcf7zuqcagulm7tihcav7q
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/ginkgo-1.4.0-vzh2jt3juvfho4lyfhv67q4pvprcmkdh
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/eigen-3.4.0-gdibmwmea4b6fbqdw3czxe4dkk3x3ba6
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/intel-tbb-2020.3-ruevhc6wrxvfme5klskmgeezjeoywelc
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/kokkos-3.5.00-twcbwdbjx53eemkonhkvps5vyujognrx
+==> Installing pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz
+==> No binary for pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz found: installing from source
+==> No patches needed for pumi
+==> pumi: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/lib64;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DSCOREC_CXX_WARNINGS=OFF' '-DENABLE_ZOLTAN:BOOL=OFF' '-DCMAKE_C_COMPILER=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc' '-DCMAKE_CXX_COMPILER=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx' '-DBUILD_SHARED_LIBS:BOOL=OFF' '-DCMAKE_Fortran_COMPILER=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpif90' '-DPUMI_FORTRAN_INTERFACE:BOOL=OFF' '-DMDS_ID_TYPE=int' '-DSKIP_SIMMETRIX_VERSION_CHECK=OFF' '-DIS_TESTING:BOOL=OFF' '-DMESHES=/tmp/shuds/spack-stage/spack-stage-pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/spack-src/pumi-meshes' '/tmp/shuds/spack-stage/spack-stage-pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/spack-src'
+
+10 errors found in build log:
+     6     -- The C compiler identification is GNU 11.2.0
+     7     -- Cray Programming Environment 2.7.13 CXX
+     8     -- Detecting CXX compiler ABI info
+     9     -- Detecting CXX compiler ABI info - failed
+     10    -- Check for working CXX compiler: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx
+     11    -- Check for working CXX compiler: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx - broken
+  >> 12    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake:62 
+           (message):
+     13      The C++ compiler
+     14    
+     15        "/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx"
+     16    
+     17      is not able to compile a simple test program.
+     18    
+
+     ...
+
+     25        Building CXX object CMakeFiles/cmTC_e24d2.dir/testCXXCompiler.cxx.o
+     26        /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx    -o CMakeFiles/cmTC_e24d2.dir/testCXXCompiler.cxx.o -c /tmp/shuds/spack
+           -stage/spack-stage-pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/spack-build-rnmyenm/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+     27        Linking CXX executable cmTC_e24d2
+     28        /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e24d2.dir/link.txt 
+           --verbose=1
+     29        /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx -dynamic CMakeFiles/cmTC_e24d2.dir/testCXXCompiler.cxx.o -o cmTC_e24d2
+     30        /usr/bin/ld: warning: libfabric.so.1, needed by /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so, not found (try
+            using -rpath or -rpath-link)
+  >> 31    /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_getinfo@@FABRIC_1.3'
+  >> 32        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_version@@FABRIC_1.0'
+  >> 33        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_freeinfo@@FABRIC_1.3'
+  >> 34        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_strerror@@FABRIC_1.0'
+  >> 35        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_fabric@@FABRIC_1.1'
+  >> 36        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_dupinfo@@FABRIC_1.3'
+  >> 37        collect2: error: ld returned 1 exit status
+  >> 38        gmake[1]: *** [CMakeFiles/cmTC_e24d2.dir/build.make:99: cmTC_e24d2] Error 1
+     39        gmake[1]: Leaving directory '/tmp/shuds/spack-stage/spack-stage-pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/spack-build-rn
+           myenm/CMakeFiles/CMakeTmp'
+  >> 40        gmake: *** [Makefile:127: cmTC_e24d2/fast] Error 2
+     41    
+     42    
+     43    
+     44    
+     45    
+     46      CMake will not be able to correctly generate this project.
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/spack-build-out.txt
+
+==> Warning: Skipping build of xsdk-0.7.0-ctdjrmc67jyl4lumpfeoygiv6qaq4tkm since pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz failed
+==> Installing blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut
+==> No binary for blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/11/11fc7b7e725086532ada58c0de53f30e480c2a06f1497b8081ea6d8f97e26150.tar.gz
+==> No patches needed for blaspp
+==> blaspp: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut/lib64;/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-Dbuild_tests=False' '-Duse_openmp=True' '-DBUILD_SHARED_LIBS=True' '-Dgpu_backend=none' '-DBLAS_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DBLA_VENDOR:STRING=CRAY' '/tmp/shuds/spack-stage/spack-stage-blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut/spack-src'
+
+1 error found in build log:
+     16    -- Not building HIP/ROCm support in BLAS++
+     17    -- Found OpenMP_CXX: -fopenmp (found version "4.5")
+     18    -- Found OpenMP: TRUE (found version "4.5")
+     19    -- Found BLAS: /opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so
+     20    -- Checking BLAS library version
+     21    -- Checking BLAS complex return type
+  >> 22    CMake Error at cmake/BLASConfig.cmake:182 (message):
+     23      Error - Cannot detect zdotc return value.  Please check the BLAS
+     24      installation.
+     25    Call Stack (most recent call first):
+     26      CMakeLists.txt:377 (include)
+     27    
+     28    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut/spack-build-out.txt
+
+==> Warning: Skipping build of slate-2021.05.02-dijkhcbi4rzxdubb4slkjcmud7eq7ah3 since blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut failed
+==> Warning: Skipping build of lapackpp-2021.04.00-lnlw6maoguoyk63mmw5w243zzzsc5vcv since blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut failed
+==> Installing arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef
+==> No binary for arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/ad/ada5aeb3878874383307239c9235b716a8a170c6d096a6625bfd529844df003d.tar.gz
+==> No patches needed for arpack-ng
+==> arpack-ng: Executing phase: 'install'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '.' '-DEXAMPLES=ON' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/lib64;/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DCMAKE_INSTALL_NAME_DIR:PATH=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/lib' '-DLAPACK_FOUND=true' '-DLAPACK_INCLUDE_DIRS=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/include' '-DLAPACK_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DBLAS_FOUND=true' '-DBLAS_INCLUDE_DIRS=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/include' '-DBLAS_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DMPI=ON' '-DBUILD_SHARED_LIBS=ON'
+
+12 errors found in build log:
+     21    -- Detecting Fortran compiler ABI info - done
+     22    -- Check for working Fortran compiler: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/lib/spack/env/gcc/gfortran - skipped
+     23    -- Detecting Fortran/C Interface
+     24    -- Detecting Fortran/C Interface - Found GLOBAL and MODULE mangling
+     25    -- Verifying Fortran/C Compiler Compatibility
+     26    -- Verifying Fortran/C Compiler Compatibility - Failed
+  >> 27    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FortranCInterface.cmake:391 (m
+           essage):
+     28      The Fortran compiler:
+     29    
+     30        /global/u2/s/shuds/spack_perlmutter/spack-xsdk/lib/spack/env/gcc/gfortran
+     31    
+     32      and the C compiler:
+     33    
+
+     ...
+
+     73        [ 80%] Building C object CMakeFiles/VerifyFortranC.dir/VerifyC.c.o
+     74        /global/u2/s/shuds/spack_perlmutter/spack-xsdk/lib/spack/env/gcc/gcc  -I/tmp/shuds/spack-stage/spack-stage-arpack-ng-3.8.0
+           -x4w2t46fspu4d6qe57updipxgmu5ykef/spack-src/CMakeFiles/FortranCInterface/VerifyC -Dsgemm=sgemm -Dsnaupd=snaupd -Dsneupd=sneupd
+            -Ddnaupd=dnaupd -Ddneupd=dneupd -Dcheev=cheev -DINCLUDE_FCMANGLE -O3 -DNDEBUG -o CMakeFiles/VerifyFortranC.dir/VerifyC.c.o -c
+            /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FortranCInterface/Verify/VerifyC.c
+     75        [100%] Linking C executable VerifyFortranC
+     76        /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/bin/cmake -E cmake_link_script CMakeFiles/VerifyFortranC.dir/link.
+           txt --verbose=1
+     77        /global/u2/s/shuds/spack_perlmutter/spack-xsdk/lib/spack/env/gcc/gcc  -Dsgemm=sgemm -Dsnaupd=snaupd -Dsneupd=sneupd -Ddnau
+           pd=dnaupd -Ddneupd=dneupd -Dcheev=cheev -DINCLUDE_FCMANGLE -O3 -DNDEBUG CMakeFiles/VerifyFortranC.dir/main.c.o CMakeFiles/Veri
+           fyFortranC.dir/VerifyC.c.o -o VerifyFortranC  libVerifyFortran.a -lmpifort_gnu_91
+     78        /usr/bin/ld: warning: libfabric.so.1, needed by /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpifort_gnu_91.so, not found 
+           (try using -rpath or -rpath-link)
+  >> 79    /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_version@@FABRIC_1.0'
+  >> 80        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_dupinfo@@FABRIC_1.3'
+  >> 81        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_strerror@@FABRIC_1.0'
+  >> 82        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_freeinfo@@FABRIC_1.3'
+  >> 83        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_fabric@@FABRIC_1.1'
+  >> 84        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_getinfo@@FABRIC_1.3'
+  >> 85        collect2: error: ld returned 1 exit status
+  >> 86        gmake[3]: *** [CMakeFiles/VerifyFortranC.dir/build.make:115: VerifyFortranC] Error 1
+     87        gmake[3]: Leaving directory '/tmp/shuds/spack-stage/spack-stage-arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/spack-src
+           /CMakeFiles/FortranCInterface/VerifyC'
+  >> 88        gmake[2]: *** [CMakeFiles/Makefile2:114: CMakeFiles/VerifyFortranC.dir/all] Error 2
+     89        gmake[2]: Leaving directory '/tmp/shuds/spack-stage/spack-stage-arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/spack-src
+           /CMakeFiles/FortranCInterface/VerifyC'
+  >> 90        gmake[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/VerifyFortranC.dir/rule] Error 2
+     91        gmake[1]: Leaving directory '/tmp/shuds/spack-stage/spack-stage-arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/spack-src
+           /CMakeFiles/FortranCInterface/VerifyC'
+  >> 92        gmake: *** [Makefile:140: VerifyFortranC] Error 2
+     93    
+     94    
+     95    Call Stack (most recent call first):
+     96      CMakeLists.txt:204 (FortranCInterface_VERIFY)
+     97    
+     98    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/spack-build-out.txt
+
+==> Warning: Skipping build of dealii-9.3.2-ok3lfjdhxhkzw5oq2xmgp7ewk4j6daf5 since arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef failed
+==> Warning: Skipping build of slepc-3.16.0-eel6uyj3wfpp4rnjvdulqowng3hbsjbc since arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef failed
+==> Warning: Skipping build of butterflypack-2.0.0-wlvx76orcyuhx3vopuzailuvcez25spf since arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef failed
+==> Warning: Skipping build of strumpack-6.1.0-o32pylhlcf6udrnnagldv7ruqhwubkxz since butterflypack-2.0.0-wlvx76orcyuhx3vopuzailuvcez25spf failed
+==> Warning: Skipping build of petsc-3.16.1-f5qh2qafh4kp3glbmgrgpijx2vv4dka4 since strumpack-6.1.0-o32pylhlcf6udrnnagldv7ruqhwubkxz failed
+==> Warning: Skipping build of amrex-21.10-y4pnve2xaqfw7lvnw5fatpzf55odmied since petsc-3.16.1-f5qh2qafh4kp3glbmgrgpijx2vv4dka4 failed
+==> Warning: Skipping build of mfem-4.3.0-vzp5dc7c7kxdgr3flka52nkb7imgmdmn since petsc-3.16.1-f5qh2qafh4kp3glbmgrgpijx2vv4dka4 failed
+==> Warning: Skipping build of pflotran-3.0.2-ylmqd2gqlom35bi6ev4kdv2ognnqosnv since petsc-3.16.1-f5qh2qafh4kp3glbmgrgpijx2vv4dka4 failed
+==> Warning: Skipping build of alquimia-1.0.9-2jruklftr5emighhqtaoe3ifgr6mykzo since pflotran-3.0.2-ylmqd2gqlom35bi6ev4kdv2ognnqosnv failed
+==> Warning: Skipping build of sundials-5.8.0-aljbf6ozo65iu5kgiu4yfhmvnouaantl since petsc-3.16.1-f5qh2qafh4kp3glbmgrgpijx2vv4dka4 failed
+==> Warning: Skipping build of py-petsc4py-3.16.1-5swckaw6wccok5p63vtnxsafjcgnwav3 since petsc-3.16.1-f5qh2qafh4kp3glbmgrgpijx2vv4dka4 failed
+==> Warning: Skipping build of py-libensemble-0.8.0-e2qweu6vdc4ey3cbpgyjrgse76azynzj since py-petsc4py-3.16.1-5swckaw6wccok5p63vtnxsafjcgnwav3 failed
+==> Installing plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3
+==> No binary for plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/e0/e0bb4d9143c8540f9f46cbccac9ed0cbea12500a864e6954fce2fe94ea057a10.tar.gz
+==> No patches needed for plasma
+==> plasma: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3/lib64;/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DBLAS_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DLAPACK_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DBUILD_SHARED_LIBS=ON' '/tmp/shuds/spack-stage/spack-stage-plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3/spack-src'
+
+1 error found in build log:
+     20    -- Could NOT find MKL (missing: MKL_INCLUDE_DIRS MKL_LIBRARIES)
+     21    -- Could NOT find OpenBLAS (missing: OpenBLAS_INCLUDE_DIRS)
+     22    -- Could NOT find NetlibCblas (missing: NetlibCblas_INCLUDE_DIRS NetlibCblas_LIBRARIES)
+     23    -- Looking for cblas_cgemm
+     24    -- Looking for cblas_cgemm - not found
+     25    -- Could NOT find Accelerate (missing: Accelerate_INCLUDE_DIRS Accelerate_LIBRARIES)
+  >> 26    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.
+           cmake:230 (message):
+     27      Could NOT find CBLAS (missing: CBLAS_INCLUDE_DIRS CBLAS_LIBRARIES)
+     28    Call Stack (most recent call first):
+     29      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_F
+           PHSA_FAILURE_MESSAGE)
+     30      Modules/FindCBLAS.cmake:69 (find_package_handle_standard_args)
+     31      CMakeLists.txt:74 (find_package)
+     32    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3/spack-build-out.txt
+
+==> Installing tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5
+==> No binary for tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/85/85fb3a7b302ea21a3b700712767a59a623d9ab93da03308fa47d4413654c3878.tar.gz
+==> No patches needed for tasmanian
+==> tasmanian: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5' '-DCMAKE_BUILD_TYPE:STRING=Release' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5/lib64;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DTasmanian_ENABLE_OPENMP:BOOL=ON' '-DTasmanian_ENABLE_BLAS:BOOL=ON' '-DTasmanian_ENABLE_PYTHON:BOOL=OFF' '-DTasmanian_ENABLE_MPI:BOOL=ON' '-DTasmanian_ENABLE_CUDA:BOOL=OFF' '-DTasmanian_ENABLE_HIP:BOOL=OFF' '-DTasmanian_ENABLE_MAGMA:BOOL=OFF' '-DTasmanian_ENABLE_FORTRAN:BOOL=OFF' '-DBLAS_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DLAPACK_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '/tmp/shuds/spack-stage/spack-stage-tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5/spack-src'
+
+1 error found in build log:
+     10    -- Detecting CXX compile features
+     11    -- Detecting CXX compile features - done
+     12    -- Found OpenMP_CXX: -fopenmp (found version "4.5")
+     13    -- Found OpenMP: TRUE (found version "4.5")
+     14    -- Checking for LAPACK LQ factorization: not found (using QR instead)
+     15    -- Could NOT find MPI_CXX (missing: MPI_CXX_WORKS)
+  >> 16    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.
+           cmake:230 (message):
+     17      Could NOT find MPI (missing: MPI_CXX_FOUND)
+     18    Call Stack (most recent call first):
+     19      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_F
+           PHSA_FAILURE_MESSAGE)
+     20      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindMPI.cmake:1830 (find_package_handle_sta
+           ndard_args)
+     21      Config/CMakeIncludes/sanity_check_and_xsdk.cmake:171 (find_package)
+     22      CMakeLists.txt:111 (include)
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5/spack-build-out.txt
+
+==> Installing py-pip-21.3.1-d5id2cblczt25mfkhn6o3hnwex3zq2ht
+==> No binary for py-pip-21.3.1-d5id2cblczt25mfkhn6o3hnwex3zq2ht found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/de/deaf32dcd9ab821e359cd8330786bcd077604b5c5730c0b096eda46f95c24a2d
+==> No patches needed for py-pip
+==> py-pip: Executing phase: 'install'
+==> py-pip: Successfully installed py-pip-21.3.1-d5id2cblczt25mfkhn6o3hnwex3zq2ht
+  Fetch: 0.22s.  Build: 4.11s.  Total: 4.33s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/py-pip-21.3.1-d5id2cblczt25mfkhn6o3hnwex3zq2ht
+==> Installing ninja-1.10.2-xi4xktnfdbtjlkhuppzjbmckmangwmux
+==> No binary for ninja-1.10.2-xi4xktnfdbtjlkhuppzjbmckmangwmux found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/ce/ce35865411f0490368a8fc383f29071de6690cbadc27704734978221f25e2bed.tar.gz
+==> No patches needed for ninja
+==> ninja: Executing phase: 'configure'
+==> ninja: Executing phase: 'install'
+==> ninja: Successfully installed ninja-1.10.2-xi4xktnfdbtjlkhuppzjbmckmangwmux
+  Fetch: 0.10s.  Build: 32.40s.  Total: 32.50s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/ninja-1.10.2-xi4xktnfdbtjlkhuppzjbmckmangwmux
+==> Installing boost-1.76.0-pwcdof2gh2vimwnch5u6xnpwjdzxsuil
+==> No binary for boost-1.76.0-pwcdof2gh2vimwnch5u6xnpwjdzxsuil found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/f0/f0397ba6e982c4450f27bf32a2a83292aba035b827a5623a14636ea583318c41.tar.bz2
+==> Applied patch /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/repos/builtin/packages/boost/bootstrap-path.patch
+==> Ran patch() for boost
+==> boost: Executing phase: 'install'
+==> boost: Successfully installed boost-1.76.0-pwcdof2gh2vimwnch5u6xnpwjdzxsuil
+  Fetch: 0.72s.  Build: 2m 9.65s.  Total: 2m 10.37s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/boost-1.76.0-pwcdof2gh2vimwnch5u6xnpwjdzxsuil
+==> Installing libtool-2.4.6-5f4utympfqu2ituzase4idfvayzbtcw6
+==> No binary for libtool-2.4.6-5f4utympfqu2ituzase4idfvayzbtcw6 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/e3/e3bd4d5d3d025a36c21dd6af7ea818a2afcd4dfc1ea5a17b39d7854bcd0c06e3.tar.gz
+==> Ran patch() for libtool
+==> libtool: Executing phase: 'autoreconf'
+==> libtool: Executing phase: 'configure'
+==> libtool: Executing phase: 'build'
+==> libtool: Executing phase: 'install'
+==> libtool: Successfully installed libtool-2.4.6-5f4utympfqu2ituzase4idfvayzbtcw6
+  Fetch: 0.12s.  Build: 17.43s.  Total: 17.54s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libtool-2.4.6-5f4utympfqu2ituzase4idfvayzbtcw6
+==> Installing libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh
+==> No binary for libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/c8/c8d6681e38c56f172892c85ddc0852e1fd4b53b4209e7f4ebf17f7e2eae71d92.tar.gz
+==> Fetching https://mirror.spack.io/_source-cache/archive/96/96151685cec997e1f9f3387e3626d61e6284d4d6e66e0e440c209286c03e9cc7.tar.gz
+==> Moving resource stage
+	source: /tmp/shuds/spack-stage/resource-xmlts-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh/spack-src/
+	destination: /tmp/shuds/spack-stage/spack-stage-libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh/spack-src/xmlconf
+==> Ran patch() for libxml2
+==> libxml2: Executing phase: 'autoreconf'
+==> libxml2: Executing phase: 'configure'
+==> libxml2: Executing phase: 'build'
+==> libxml2: Executing phase: 'install'
+==> libxml2: Successfully installed libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh
+  Fetch: 0.26s.  Build: 31.83s.  Total: 32.09s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh
+==> Installing gdbm-1.19-ywzw7ligzvsqor7dgj6lnw53qspaq7ly
+==> No binary for gdbm-1.19-ywzw7ligzvsqor7dgj6lnw53qspaq7ly found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/37/37ed12214122b972e18a0d94995039e57748191939ef74115b1d41d8811364bc.tar.gz
+==> No patches needed for gdbm
+==> gdbm: Executing phase: 'autoreconf'
+==> gdbm: Executing phase: 'configure'
+==> gdbm: Executing phase: 'build'
+==> gdbm: Executing phase: 'install'
+==> gdbm: Successfully installed gdbm-1.19-ywzw7ligzvsqor7dgj6lnw53qspaq7ly
+  Fetch: 0.10s.  Build: 14.90s.  Total: 14.99s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/gdbm-1.19-ywzw7ligzvsqor7dgj6lnw53qspaq7ly
+==> Installing heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7
+==> No binary for heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/af/aff4f5111d3d05b269a1378bb201271c40b39e9c960c05c4ef247a31a039be58.tar.gz
+==> No patches needed for heffte
+==> heffte: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7/lib64;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/fftw/3.3.8.12/x86_milan;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DBUILD_SHARED_LIBS:BOOL=ON' '-DHeffte_ENABLE_CUDA:BOOL=OFF' '-DHeffte_ENABLE_ROCM:BOOL=OFF' '-DHeffte_ENABLE_FFTW:BOOL=ON' '-DHeffte_ENABLE_MKL:BOOL=OFF' '-DHeffte_ENABLE_MAGMA:BOOL=OFF' '-DHeffte_ENABLE_FORTRAN:BOOL=OFF' '-DHeffte_ENABLE_PYTHON:BOOL=OFF' '-DBUILD_GPU=OFF' '/tmp/shuds/spack-stage/spack-stage-heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7/spack-src'
+
+1 error found in build log:
+     10    -- Detecting CXX compile features
+     11    -- Detecting CXX compile features - done
+     12    -- Found Git: /usr/bin/git (found version "2.26.2")
+     13    fatal: not a git repository (or any parent up to mount point /)
+     14    Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+     15    -- Could NOT find MPI_CXX (missing: MPI_CXX_WORKS)
+  >> 16    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.
+           cmake:230 (message):
+     17      Could NOT find MPI (missing: MPI_CXX_FOUND)
+     18    Call Stack (most recent call first):
+     19      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_F
+           PHSA_FAILURE_MESSAGE)
+     20      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindMPI.cmake:1830 (find_package_handle_sta
+           ndard_args)
+     21      CMakeLists.txt:73 (find_package)
+     22    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7/spack-build-out.txt
+
+==> Installing parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy
+==> No binary for parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/f2/f2d9a231b7cf97f1fee6e8c9663113ebf6c240d407d3c118c55b3633d6be6e5f.tar.gz
+==> Applied patch /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/repos/builtin/packages/parmetis/enable_external_metis.patch
+==> Applied patch /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/repos/builtin/packages/parmetis/pkg-parmetis-1c1a9fd0f408dc4d42c57f5c3ee6ace411eb222b.patch
+==> Applied patch /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/repos/builtin/packages/parmetis/pkg-parmetis-82409d68aa1d6cbc70740d0f35024aae17f7d5cb.patch
+==> parmetis: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/lib64;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/metis-5.1.0-lxe5bhakcmkcf7zuqcagulm7tihcav7q/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/metis-5.1.0-lxe5bhakcmkcf7zuqcagulm7tihcav7q;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DGKLIB_PATH:PATH=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/metis-5.1.0-lxe5bhakcmkcf7zuqcagulm7tihcav7q/include/GKlib' '-DMETIS_PATH:PATH=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/metis-5.1.0-lxe5bhakcmkcf7zuqcagulm7tihcav7q' '-DCMAKE_C_COMPILER:STRING=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc' '-DCMAKE_CXX_COMPILER:STRING=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx' '-DSHARED:BOOL=ON' '/tmp/shuds/spack-stage/spack-stage-parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/spack-src'
+
+10 errors found in build log:
+     14    -- The CXX compiler identification is GNU 11.2.0
+     15    -- Cray Programming Environment 2.7.13 C
+     16    -- Detecting C compiler ABI info
+     17    -- Detecting C compiler ABI info - failed
+     18    -- Check for working C compiler: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc
+     19    -- Check for working C compiler: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc - broken
+  >> 20    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (m
+           essage):
+     21      The C compiler
+     22    
+     23        "/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc"
+     24    
+     25      is not able to compile a simple test program.
+     26    
+
+     ...
+
+     33        Building C object CMakeFiles/cmTC_5224b.dir/testCCompiler.c.o
+     34        /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc    -o CMakeFiles/cmTC_5224b.dir/testCCompiler.c.o -c /tmp/shuds/spack-stag
+           e/spack-stage-parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/spack-build-lq5ude6/CMakeFiles/CMakeTmp/testCCompiler.c
+     35        Linking C executable cmTC_5224b
+     36        /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5224b.dir/link.txt 
+           --verbose=1
+     37        /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc -dynamic CMakeFiles/cmTC_5224b.dir/testCCompiler.c.o -o cmTC_5224b
+     38        /usr/bin/ld: warning: libfabric.so.1, needed by /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so, not found (try
+            using -rpath or -rpath-link)
+  >> 39    /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_version@@FABRIC_1.0'
+  >> 40        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_dupinfo@@FABRIC_1.3'
+  >> 41        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_strerror@@FABRIC_1.0'
+  >> 42        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_freeinfo@@FABRIC_1.3'
+  >> 43        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_fabric@@FABRIC_1.1'
+  >> 44        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_getinfo@@FABRIC_1.3'
+  >> 45        collect2: error: ld returned 1 exit status
+  >> 46        gmake[1]: *** [CMakeFiles/cmTC_5224b.dir/build.make:99: cmTC_5224b] Error 1
+     47        gmake[1]: Leaving directory '/tmp/shuds/spack-stage/spack-stage-parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/spack-buil
+           d-lq5ude6/CMakeFiles/CMakeTmp'
+  >> 48        gmake: *** [Makefile:127: cmTC_5224b/fast] Error 2
+     49    
+     50    
+     51    
+     52    
+     53    
+     54      CMake will not be able to correctly generate this project.
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/spack-build-out.txt
+
+==> Warning: Skipping build of superlu-dist-7.1.1-zgknepagwwizrnrhoj5fi3cvmev2ccy4 since parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy failed
+==> Warning: Skipping build of hypre-2.23.0-4h2fps35k5brodlhjiad6wvqhxcajjth since superlu-dist-7.1.1-zgknepagwwizrnrhoj5fi3cvmev2ccy4 failed
+==> Warning: Skipping build of trilinos-13.2.0-zlz5efmkqy24wkmhccwhyw2ofilwna2e since hypre-2.23.0-4h2fps35k5brodlhjiad6wvqhxcajjth failed
+==> Warning: Skipping build of phist-1.9.5-6iuqmkgmi4llcqkg4uzwfbwve5m6di2x since trilinos-13.2.0-zlz5efmkqy24wkmhccwhyw2ofilwna2e failed
+==> Warning: Skipping build of datatransferkit-3.1-rc3-tfybfgt6kr5n5wbw64krp3bjkllszbmo since trilinos-13.2.0-zlz5efmkqy24wkmhccwhyw2ofilwna2e failed
+==> Warning: Skipping build of omega-h-9.34.1-37v2yqwlh6oqjsggdtdajozazmwfw7ms since trilinos-13.2.0-zlz5efmkqy24wkmhccwhyw2ofilwna2e failed
+==> Installing oce-0.18.3-frhgakhsg67lvwrpvkxawdu36spdwx5c
+==> No binary for oce-0.18.3-frhgakhsg67lvwrpvkxawdu36spdwx5c found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/c5/c553d6a7bf52f790abc3b6bb7a1e91a65947e92a426bb1a88a11960c31f0966c.tar.gz
+==> No patches needed for oce
+==> oce: Executing phase: 'install'
+==> oce: Successfully installed oce-0.18.3-frhgakhsg67lvwrpvkxawdu36spdwx5c
+  Fetch: 1.05s.  Build: 15m 12.63s.  Total: 15m 13.68s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/oce-0.18.3-frhgakhsg67lvwrpvkxawdu36spdwx5c
+==> Installing arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al
+==> No binary for arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/2b/2b5f2d2d5cec57c52f470c2bf4f42621b40271f870b4f80cb57e52df1acd90ce.tar.gz
+==> No patches needed for arborx
+==> arborx: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al/lib64;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/kokkos-3.5.00-twcbwdbjx53eemkonhkvps5vyujognrx/lib64;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/kokkos-3.5.00-twcbwdbjx53eemkonhkvps5vyujognrx;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DKokkos_ROOT=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/kokkos-3.5.00-twcbwdbjx53eemkonhkvps5vyujognrx' '-DARBORX_ENABLE_MPI:BOOL=ON' '/tmp/shuds/spack-stage/spack-stage-arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al/spack-src'
+
+1 error found in build log:
+     8     -- Detecting CXX compiler ABI info - done
+     9     -- Check for working CXX compiler: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/lib/spack/env/gcc/g++ - skipped
+     10    -- Detecting CXX compile features
+     11    -- Detecting CXX compile features - done
+     12    -- Enabled Kokkos devices: SERIAL
+     13    -- Could NOT find MPI_CXX (missing: MPI_CXX_WORKS)
+  >> 14    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.
+           cmake:230 (message):
+     15      Could NOT find MPI (missing: MPI_CXX_FOUND)
+     16    Call Stack (most recent call first):
+     17      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_F
+           PHSA_FAILURE_MESSAGE)
+     18      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindMPI.cmake:1830 (find_package_handle_sta
+           ndard_args)
+     19      CMakeLists.txt:43 (find_package)
+     20    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al/spack-build-out.txt
+
+==> Installing py-wheel-0.37.0-y2n2sc3gxge7mp2ojyvky5fuxzurugrf
+==> No binary for py-wheel-0.37.0-y2n2sc3gxge7mp2ojyvky5fuxzurugrf found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/21/21014b2bd93c6d0034b6ba5d35e4eb284340e09d63c59aef6fc14b0f346146fd
+==> No patches needed for py-wheel
+==> py-wheel: Executing phase: 'install'
+==> py-wheel: Successfully installed py-wheel-0.37.0-y2n2sc3gxge7mp2ojyvky5fuxzurugrf
+  Fetch: 0.09s.  Build: 1.17s.  Total: 1.26s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/py-wheel-0.37.0-y2n2sc3gxge7mp2ojyvky5fuxzurugrf
+==> Installing p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v
+==> No binary for p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/6a/6a0586e3abac06c20e31b1018f3a82a564a6a0d9ff6b7f6c772a9e6b0f0cc5e4.tar.gz
+==> No patches needed for p4est
+==> p4est: Executing phase: 'autoreconf'
+==> p4est: Executing phase: 'configure'
+==> Error: ProcessError: Command exited with status 77:
+    '/tmp/shuds/spack-stage/spack-stage-p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v/spack-src/configure' '--prefix=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v' '--enable-shared' '--disable-vtk-binary' '--without-blas' 'CPPFLAGS=-DSC_LOG_PRIORITY=SC_LP_ESSENTIAL' 'CFLAGS=-O2' '--enable-mpi' 'CC=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc' 'CXX=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx' 'FC=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpif90' 'F77=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpif77' '--disable-openmp'
+
+2 errors found in build log:
+     24    checking for mpiexec... no
+     25    checking for mpirun... no
+     26    configure:                              CC set to /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc
+     27    checking for style of include used by make... GNU
+     28    checking for gcc... /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc
+     29    checking whether the C compiler works... no
+  >> 30    configure: error: in `/tmp/shuds/spack-stage/spack-stage-p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v/spack-src':
+  >> 31    configure: error: C compiler cannot create executables
+     32    See `config.log' for more details
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v/spack-build-out.txt
+
+==> Installing libpciaccess-0.16-ij4jz4w3okzgtafoc2nr3xror6y32ts3
+==> No binary for libpciaccess-0.16-ij4jz4w3okzgtafoc2nr3xror6y32ts3 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/84/84413553994aef0070cf420050aa5c0a51b1956b404920e21b81e96db6a61a27.tar.gz
+==> No patches needed for libpciaccess
+==> libpciaccess: Executing phase: 'autoreconf'
+==> libpciaccess: Executing phase: 'configure'
+==> libpciaccess: Executing phase: 'build'
+==> libpciaccess: Executing phase: 'install'
+==> libpciaccess: Successfully installed libpciaccess-0.16-ij4jz4w3okzgtafoc2nr3xror6y32ts3
+  Fetch: 0.10s.  Build: 12.33s.  Total: 12.44s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libpciaccess-0.16-ij4jz4w3okzgtafoc2nr3xror6y32ts3
+==> Installing precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g
+==> No binary for precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/57/57bab08e8b986f5faa364689d470940dbd9c138e5cfa7b861793e7db56b89da3.tar.gz
+==> No patches needed for precice
+==> precice: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g/lib64;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/boost-1.76.0-pwcdof2gh2vimwnch5u6xnpwjdzxsuil/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/zlib-1.2.11-ekeupmdcqoimgroigtctln7tqkyh6pdm/lib;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libiconv-1.16-l4kbzvfipqrntybop73s6hhtyif53ysm/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/pkgconf-1.8.0-kiw5m6f32d3hodo632qfgetsjk6vms7w;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libiconv-1.16-l4kbzvfipqrntybop73s6hhtyif53ysm;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/eigen-3.4.0-gdibmwmea4b6fbqdw3czxe4dkk3x3ba6;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/boost-1.76.0-pwcdof2gh2vimwnch5u6xnpwjdzxsuil;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/zlib-1.2.11-ekeupmdcqoimgroigtctln7tqkyh6pdm;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DBUILD_SHARED_LIBS:BOOL=ON' '-DPRECICE_MPICommunication:BOOL=ON' '-DTPL_ENABLE_BOOST=ON' '-DBOOST_ROOT=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/boost-1.76.0-pwcdof2gh2vimwnch5u6xnpwjdzxsuil' '-DTPL_ENABLE_EIGEN3=ON' '-DEIGEN3_INCLUDE_DIR=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/eigen-3.4.0-gdibmwmea4b6fbqdw3czxe4dkk3x3ba6/include/eigen3' '-DTPL_ENABLE_LIBXML2=ON' '-DLIBXML2_INCLUDE_DIRS=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh/include/libxml2' '-DLIBXML2_LIBRARIES=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh/lib/libxml2.so' '-DPRECICE_PETScMapping:BOOL=OFF' '-DPRECICE_PythonActions:BOOL=OFF' '/tmp/shuds/spack-stage/spack-stage-precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g/spack-src'
+
+1 error found in build log:
+     94     -- Validating LibXml2 - success
+     95     -- Validating JSON
+     96     -- Validating JSON - success
+     97     -- Validating fmtlib
+     98     -- Validating fmtlib - success
+     99     -- Could NOT find MPI_CXX (missing: MPI_CXX_WORKS)
+  >> 100    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs
+            .cmake:230 (message):
+     101      Could NOT find MPI (missing: MPI_CXX_FOUND)
+     102    Call Stack (most recent call first):
+     103      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_
+            FPHSA_FAILURE_MESSAGE)
+     104      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindMPI.cmake:1830 (find_package_handle_st
+            andard_args)
+     105      CMakeLists.txt:193 (find_package)
+     106    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g/spack-build-out.txt
+
+==> Installing perl-5.34.0-tjfn5srdiacnue2wb6ov27ivytuvfhz7
+==> No binary for perl-5.34.0-tjfn5srdiacnue2wb6ov27ivytuvfhz7 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/55/551efc818b968b05216024fb0b727ef2ad4c100f8cb6b43fab615fa78ae5be9a.tar.gz
+==> Fetching https://mirror.spack.io/_source-cache/archive/9d/9da50e155df72bce55cb69f51f1dbb4b62d23740fb99f6178bb27f22ebdf8a46.tar.gz
+==> Moving resource stage
+	source: /tmp/shuds/spack-stage/resource-cpanm-tjfn5srdiacnue2wb6ov27ivytuvfhz7/spack-src/
+	destination: /tmp/shuds/spack-stage/spack-stage-perl-5.34.0-tjfn5srdiacnue2wb6ov27ivytuvfhz7/spack-src/cpanm/cpanm
+==> Ran patch() for perl
+==> perl: Executing phase: 'configure'
+==> perl: Executing phase: 'build'
+==> perl: Executing phase: 'install'
+==> perl: Successfully installed perl-5.34.0-tjfn5srdiacnue2wb6ov27ivytuvfhz7
+  Fetch: 0.37s.  Build: 2m 38.27s.  Total: 2m 38.64s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/perl-5.34.0-tjfn5srdiacnue2wb6ov27ivytuvfhz7
+==> Installing py-psutil-5.8.0-gyrs7tch7ebsgg53cm2xw2ejkhhngs4l
+==> No binary for py-psutil-5.8.0-gyrs7tch7ebsgg53cm2xw2ejkhhngs4l found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/0c/0c9ccb99ab76025f2f0bbecf341d4656e9c1351db8cc8a03ccd62e318ab4b5c6.tar.gz
+==> No patches needed for py-psutil
+==> py-psutil: Executing phase: 'install'
+==> py-psutil: Successfully installed py-psutil-5.8.0-gyrs7tch7ebsgg53cm2xw2ejkhhngs4l
+  Fetch: 0.47s.  Build: 5.30s.  Total: 5.77s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/py-psutil-5.8.0-gyrs7tch7ebsgg53cm2xw2ejkhhngs4l
+==> Installing hwloc-2.7.0-kpq6bsfikamqnkwiwv3syym6hwnio5a4
+==> No binary for hwloc-2.7.0-kpq6bsfikamqnkwiwv3syym6hwnio5a4 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/d9/d9b23e9b0d17247e8b50254810427ca8a9857dc868e2e3a049f958d7c66af374.tar.gz
+==> No patches needed for hwloc
+==> hwloc: Executing phase: 'autoreconf'
+==> hwloc: Executing phase: 'configure'
+==> hwloc: Executing phase: 'build'
+==> hwloc: Executing phase: 'install'
+==> hwloc: Successfully installed hwloc-2.7.0-kpq6bsfikamqnkwiwv3syym6hwnio5a4
+  Fetch: 0.16s.  Build: 36.34s.  Total: 36.50s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/hwloc-2.7.0-kpq6bsfikamqnkwiwv3syym6hwnio5a4
+==> Installing texinfo-6.5-fapvnoume74exd5agdvqctatc5m3vl3t
+==> No binary for texinfo-6.5-fapvnoume74exd5agdvqctatc5m3vl3t found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/d3/d34272e4042c46186ddcd66bd5d980c0ca14ff734444686ccf8131f6ec8b1427.tar.gz
+==> Applied patch /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/repos/builtin/packages/texinfo/fix_unescaped_braces.patch
+==> Applied patch /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/repos/builtin/packages/texinfo/update_locale_handling.patch
+==> texinfo: Executing phase: 'autoreconf'
+==> texinfo: Executing phase: 'configure'
+==> texinfo: Executing phase: 'build'
+==> texinfo: Executing phase: 'install'
+==> texinfo: Successfully installed texinfo-6.5-fapvnoume74exd5agdvqctatc5m3vl3t
+  Fetch: 0.20s.  Build: 1m 25.54s.  Total: 1m 25.74s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/texinfo-6.5-fapvnoume74exd5agdvqctatc5m3vl3t
+==> Installing autoconf-2.69-fu7i3o5agmgxqkfawrilqid4jj3uxuw7
+==> No binary for autoconf-2.69-fu7i3o5agmgxqkfawrilqid4jj3uxuw7 found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/95/954bd69b391edc12d6a4a51a2dd1476543da5c6bbf05a95b59dc0dd6fd4c2969.tar.gz
+==> Fetching https://mirror.spack.io/_source-cache/archive/77/7793209b33013dc0f81208718c68440c5aae80e7a1c4b8d336e382525af791a7
+==> Fetching https://mirror.spack.io/_source-cache/archive/35/35c449281546376449766f92d49fc121ca50e330e60fefcfc9be2af3253082c2
+==> Fetching https://mirror.spack.io/_source-cache/archive/a4/a49dd5bac3b62daa0ff688ab4d508d71dbd2f4f8d7e2a02321926346161bf3ee
+==> Applied patch http://mirrors.mit.edu/gentoo-portage/sys-devel/autoconf/files/autoconf-2.69-fix-libtool-test.patch
+==> Applied patch http://mirrors.mit.edu/gentoo-portage/sys-devel/autoconf/files/autoconf-2.69-perl-5.26.patch
+==> Applied patch http://mirrors.mit.edu/gentoo-portage/sys-devel/autoconf/files/autoconf-2.69-perl-5.26-2.patch
+==> Ran patch() for autoconf
+==> autoconf: Executing phase: 'autoreconf'
+==> autoconf: Executing phase: 'configure'
+==> autoconf: Executing phase: 'build'
+==> autoconf: Executing phase: 'install'
+==> autoconf: Successfully installed autoconf-2.69-fu7i3o5agmgxqkfawrilqid4jj3uxuw7
+  Fetch: 0.12s.  Build: 5.51s.  Total: 5.63s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/autoconf-2.69-fu7i3o5agmgxqkfawrilqid4jj3uxuw7
+==> Installing automake-1.16.5-4gydhz5l5lp2zdyxqrm36tnd56lilimq
+==> No binary for automake-1.16.5-4gydhz5l5lp2zdyxqrm36tnd56lilimq found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/07/07bd24ad08a64bc17250ce09ec56e921d6343903943e99ccf63bbf0705e34605.tar.gz
+==> Ran patch() for automake
+==> automake: Executing phase: 'autoreconf'
+==> automake: Executing phase: 'configure'
+==> automake: Executing phase: 'build'
+==> automake: Executing phase: 'install'
+==> automake: Successfully installed automake-1.16.5-4gydhz5l5lp2zdyxqrm36tnd56lilimq
+  Fetch: 0.15s.  Build: 5.97s.  Total: 6.11s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/automake-1.16.5-4gydhz5l5lp2zdyxqrm36tnd56lilimq
+==> Installing gmp-6.2.1-46weytep6blnq62jb35stqww7g7manii
+==> No binary for gmp-6.2.1-46weytep6blnq62jb35stqww7g7manii found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/ea/eae9326beb4158c386e39a356818031bd28f3124cf915f8c5b1dc4c7a36b4d7c.tar.bz2
+==> No patches needed for gmp
+==> gmp: Executing phase: 'autoreconf'
+==> gmp: Executing phase: 'configure'
+==> gmp: Executing phase: 'build'
+==> gmp: Executing phase: 'install'
+==> gmp: Successfully installed gmp-6.2.1-46weytep6blnq62jb35stqww7g7manii
+  Fetch: 0.12s.  Build: 1m 7.84s.  Total: 1m 7.96s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/gmp-6.2.1-46weytep6blnq62jb35stqww7g7manii
+==> Installing mpfr-4.1.0-tiu6sywtytmmw7wkijs6v7xgkl7xidye
+==> No binary for mpfr-4.1.0-tiu6sywtytmmw7wkijs6v7xgkl7xidye found: installing from source
+==> Fetching https://mirror.spack.io/_source-cache/archive/fe/feced2d430dd5a97805fa289fed3fc8ff2b094c02d05287fd6133e7f1f0ec926.tar.bz2
+==> No patches needed for mpfr
+==> mpfr: Executing phase: 'autoreconf'
+==> mpfr: Executing phase: 'configure'
+==> mpfr: Executing phase: 'build'
+==> mpfr: Executing phase: 'install'
+==> mpfr: Successfully installed mpfr-4.1.0-tiu6sywtytmmw7wkijs6v7xgkl7xidye
+  Fetch: 0.12s.  Build: 46.26s.  Total: 46.38s.
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/mpfr-4.1.0-tiu6sywtytmmw7wkijs6v7xgkl7xidye
+==> Installing suite-sparse-5.10.1-uimtpmubowenlkiz32p4ta4lbabkckam
+==> No binary for suite-sparse-5.10.1-uimtpmubowenlkiz32p4ta4lbabkckam found: installing from source
+client_loop: send disconnect: Broken pipe
+
+
+GOT DISCONNETED !!!!
+
+shudson@shuds:~$ 
+shudson@shuds:~$ ssh -AX perlmutter
+...
+Login connection to host x3116c0s7b0n0:
+
+...
+
+
+
+
+
+
+shuds@login33:spack-xsdk$ spack install xsdk%gcc@11.2.0
+==> Warning: Missing a source id for xsdk@0.7.0
+==> cmake@3.22.0 : has external module in ['cmake/3.22.0']
+[+] /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0 (external cmake-3.22.0-faioohzbenshbpvizgwor5fk5ify5zea)
+==> cray-mpich@8.1.13 : has external module in ['cray-mpich/8.1.13', 'cudatoolkit/11.5']
+[+] /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1 (external cray-mpich-8.1.13-qju2ytuheqgg6zjsu7qqxnnqa22fqodm)
+==> hdf5@1.12.1.1 : has external module in ['cray-hdf5-parallel/1.12.1.1']
+[+] /opt/cray/pe/hdf5-parallel/1.12.1.1 (external hdf5-1.12.1.1-n4vev2eijxvkmvawimvgn7hz5royyhmc)
+==> cray-libsci@21.08.1.2 : has external module in ['cray-libsci/21.08.1.2']
+[+] /opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64 (external cray-libsci-21.08.1.2-onzzhizl63xj72v3yq76pprtorqer7rv)
+[+] /usr (external diffutils-3.6-l3lpsetnlxyumavq6k4uzi7tp7pbvvkw)
+==> python@3.9.7 : has external module in ['python/3.9-anaconda-2021.11']
+[+] /global/common/software/nersc/pm-2021q4/sw/python/3.9-anaconda-2021.11 (external python-3.9.7-cl54a7o7py426fuwltbb35tswqflc5ub)
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/zlib-1.2.11-ekeupmdcqoimgroigtctln7tqkyh6pdm
+[+] /usr (external bzip2-1.0.6-c3mhclohvb5m76wazqviskyhfmww3b3m)
+[+] /usr (external m4-1.4.18-j2ty5m5pkz5jo23rmr55ntbalpmta4dm)
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/pkgconf-1.8.0-kiw5m6f32d3hodo632qfgetsjk6vms7w
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/util-macros-1.19.3-w4jpg7oett64sxqw2lpirutnwgrddgt5
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libiconv-1.16-l4kbzvfipqrntybop73s6hhtyif53ysm
+[+] /usr (external xz-5.2.3-xd5oqr6xuwwfpdeka5emeubgrqus4jz3)
+[+] /usr (external ncurses-6.1-67sz4auzlr63x2wvc7ctutifwse3rnxk)
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/gsl-2.7-2p3pcjckzogek2dubph7q4yd5msjuhxt
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/berkeley-db-18.1.40-xvr7zsb5eira5zo2euofbchzubhfvcqe
+[+] /usr (external readline-7.0-4nkx33edjh2swiaeflbcsck3w2yphw2g)
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/autoconf-archive-2019.01.06-446plgvhuvjdio3kd4ir2ax7gi5hbcud
+==> fftw@3.3.8.12 : has external module in ['cray-fftw/3.3.8.12']
+[+] /opt/cray/pe/fftw/3.3.8.12/x86_milan (external fftw-3.3.8.12-jbkmrqulbszcbd7lxjozr26ymhnd2eaf)
+==> py-numpy@1.20.3 : has external module in ['python/3.9-anaconda-2021.11']
+[+] /global/common/software/nersc/pm-2021q4/sw/python/3.9-anaconda-2021.11 (external py-numpy-1.20.3-j7wmkmnq6gnukoyts5mnlgiewrreo3pk)
+==> py-mpi4py@3.1.3 : has external module in ['python/3.9-anaconda-2021.11']
+[+] /global/common/software/nersc/pm-2021q4/sw/python/3.9-anaconda-2021.11 (external py-mpi4py-3.1.3-hzl5hy3f7jhcx5uoshfyep4rg37fud5c)
+==> py-setuptools@58.0.4 : has external module in ['python/3.9-anaconda-2021.11']
+[+] /global/common/software/nersc/pm-2021q4/sw/python/3.9-anaconda-2021.11 (external py-setuptools-58.0.4-54sfxvuo2c2ltglxu6uv2jmaci7qqf6p)
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/zfp-0.5.5-li5u3vuzijjqn5yyjh2v2fak42uuehwf
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/metis-5.1.0-lxe5bhakcmkcf7zuqcagulm7tihcav7q
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/muparser-2.2.6.1-sjvraqgbspjyxnoqr7gru2elkx2kokq4
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/ginkgo-1.4.0-vzh2jt3juvfho4lyfhv67q4pvprcmkdh
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/intel-tbb-2020.3-ruevhc6wrxvfme5klskmgeezjeoywelc
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/eigen-3.4.0-gdibmwmea4b6fbqdw3czxe4dkk3x3ba6
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/kokkos-3.5.00-twcbwdbjx53eemkonhkvps5vyujognrx
+==> Installing pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz
+==> No binary for pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz found: installing from source
+==> Using cached archive: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/cache/_source-cache/git//SCOREC/core.git/4dd330e960b1921ae0d8d4039b8de8680a20d993.tar.gz
+==> Warning: Fetching from mirror without a checksum!
+  This package is normally checked out from a version control system, but it has been archived on a spack mirror.  This means we cannot know a checksum for the tarball in advance. Be sure that your connection to this mirror is secure!
+==> No patches needed for pumi
+==> pumi: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/lib64;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DSCOREC_CXX_WARNINGS=OFF' '-DENABLE_ZOLTAN:BOOL=OFF' '-DCMAKE_C_COMPILER=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc' '-DCMAKE_CXX_COMPILER=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx' '-DBUILD_SHARED_LIBS:BOOL=OFF' '-DCMAKE_Fortran_COMPILER=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpif90' '-DPUMI_FORTRAN_INTERFACE:BOOL=OFF' '-DMDS_ID_TYPE=int' '-DSKIP_SIMMETRIX_VERSION_CHECK=OFF' '-DIS_TESTING:BOOL=OFF' '-DMESHES=/tmp/shuds/spack-stage/spack-stage-pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/spack-src/pumi-meshes' '/tmp/shuds/spack-stage/spack-stage-pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/spack-src'
+
+10 errors found in build log:
+     6     -- The C compiler identification is GNU 11.2.0
+     7     -- Cray Programming Environment 2.7.13 CXX
+     8     -- Detecting CXX compiler ABI info
+     9     -- Detecting CXX compiler ABI info - failed
+     10    -- Check for working CXX compiler: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx
+     11    -- Check for working CXX compiler: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx - broken
+  >> 12    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake:62 
+           (message):
+     13      The C++ compiler
+     14    
+     15        "/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx"
+     16    
+     17      is not able to compile a simple test program.
+     18    
+
+     ...
+
+     25        Building CXX object CMakeFiles/cmTC_1d422.dir/testCXXCompiler.cxx.o
+     26        /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx    -o CMakeFiles/cmTC_1d422.dir/testCXXCompiler.cxx.o -c /tmp/shuds/spack
+           -stage/spack-stage-pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/spack-build-rnmyenm/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+     27        Linking CXX executable cmTC_1d422
+     28        /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d422.dir/link.txt 
+           --verbose=1
+     29        /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx -dynamic CMakeFiles/cmTC_1d422.dir/testCXXCompiler.cxx.o -o cmTC_1d422
+     30        /usr/bin/ld: warning: libfabric.so.1, needed by /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so, not found (try
+            using -rpath or -rpath-link)
+  >> 31    /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_getinfo@@FABRIC_1.3'
+  >> 32        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_version@@FABRIC_1.0'
+  >> 33        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_freeinfo@@FABRIC_1.3'
+  >> 34        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_strerror@@FABRIC_1.0'
+  >> 35        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_fabric@@FABRIC_1.1'
+  >> 36        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_dupinfo@@FABRIC_1.3'
+  >> 37        collect2: error: ld returned 1 exit status
+  >> 38        gmake[1]: *** [CMakeFiles/cmTC_1d422.dir/build.make:99: cmTC_1d422] Error 1
+     39        gmake[1]: Leaving directory '/tmp/shuds/spack-stage/spack-stage-pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/spack-build-rn
+           myenm/CMakeFiles/CMakeTmp'
+  >> 40        gmake: *** [Makefile:127: cmTC_1d422/fast] Error 2
+     41    
+     42    
+     43    
+     44    
+     45    
+     46      CMake will not be able to correctly generate this project.
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz/spack-build-out.txt
+
+==> Warning: Skipping build of xsdk-0.7.0-ctdjrmc67jyl4lumpfeoygiv6qaq4tkm since pumi-2.2.6-rnmyenm55rrztjynwct5n2tfmt464psz failed
+==> Installing arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef
+==> No binary for arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef found: installing from source
+==> Using cached archive: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/cache/_source-cache/archive/ad/ada5aeb3878874383307239c9235b716a8a170c6d096a6625bfd529844df003d.tar.gz
+==> No patches needed for arpack-ng
+==> arpack-ng: Executing phase: 'install'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '.' '-DEXAMPLES=ON' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/lib64;/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DCMAKE_INSTALL_NAME_DIR:PATH=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/lib' '-DLAPACK_FOUND=true' '-DLAPACK_INCLUDE_DIRS=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/include' '-DLAPACK_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DBLAS_FOUND=true' '-DBLAS_INCLUDE_DIRS=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/include' '-DBLAS_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DMPI=ON' '-DBUILD_SHARED_LIBS=ON'
+
+12 errors found in build log:
+     21    -- Detecting Fortran compiler ABI info - done
+     22    -- Check for working Fortran compiler: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/lib/spack/env/gcc/gfortran - skipped
+     23    -- Detecting Fortran/C Interface
+     24    -- Detecting Fortran/C Interface - Found GLOBAL and MODULE mangling
+     25    -- Verifying Fortran/C Compiler Compatibility
+     26    -- Verifying Fortran/C Compiler Compatibility - Failed
+  >> 27    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FortranCInterface.cmake:391 (m
+           essage):
+     28      The Fortran compiler:
+     29    
+     30        /global/u2/s/shuds/spack_perlmutter/spack-xsdk/lib/spack/env/gcc/gfortran
+     31    
+     32      and the C compiler:
+     33    
+
+     ...
+
+     73        [ 80%] Building C object CMakeFiles/VerifyFortranC.dir/VerifyC.c.o
+     74        /global/u2/s/shuds/spack_perlmutter/spack-xsdk/lib/spack/env/gcc/gcc  -I/tmp/shuds/spack-stage/spack-stage-arpack-ng-3.8.0
+           -x4w2t46fspu4d6qe57updipxgmu5ykef/spack-src/CMakeFiles/FortranCInterface/VerifyC -Dsgemm=sgemm -Dsnaupd=snaupd -Dsneupd=sneupd
+            -Ddnaupd=dnaupd -Ddneupd=dneupd -Dcheev=cheev -DINCLUDE_FCMANGLE -O3 -DNDEBUG -o CMakeFiles/VerifyFortranC.dir/VerifyC.c.o -c
+            /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FortranCInterface/Verify/VerifyC.c
+     75        [100%] Linking C executable VerifyFortranC
+     76        /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/bin/cmake -E cmake_link_script CMakeFiles/VerifyFortranC.dir/link.
+           txt --verbose=1
+     77        /global/u2/s/shuds/spack_perlmutter/spack-xsdk/lib/spack/env/gcc/gcc  -Dsgemm=sgemm -Dsnaupd=snaupd -Dsneupd=sneupd -Ddnau
+           pd=dnaupd -Ddneupd=dneupd -Dcheev=cheev -DINCLUDE_FCMANGLE -O3 -DNDEBUG CMakeFiles/VerifyFortranC.dir/main.c.o CMakeFiles/Veri
+           fyFortranC.dir/VerifyC.c.o -o VerifyFortranC  libVerifyFortran.a -lmpifort_gnu_91
+     78        /usr/bin/ld: warning: libfabric.so.1, needed by /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpifort_gnu_91.so, not found 
+           (try using -rpath or -rpath-link)
+  >> 79    /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_version@@FABRIC_1.0'
+  >> 80        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_dupinfo@@FABRIC_1.3'
+  >> 81        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_strerror@@FABRIC_1.0'
+  >> 82        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_freeinfo@@FABRIC_1.3'
+  >> 83        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_fabric@@FABRIC_1.1'
+  >> 84        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_getinfo@@FABRIC_1.3'
+  >> 85        collect2: error: ld returned 1 exit status
+  >> 86        gmake[3]: *** [CMakeFiles/VerifyFortranC.dir/build.make:115: VerifyFortranC] Error 1
+     87        gmake[3]: Leaving directory '/tmp/shuds/spack-stage/spack-stage-arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/spack-src
+           /CMakeFiles/FortranCInterface/VerifyC'
+  >> 88        gmake[2]: *** [CMakeFiles/Makefile2:114: CMakeFiles/VerifyFortranC.dir/all] Error 2
+     89        gmake[2]: Leaving directory '/tmp/shuds/spack-stage/spack-stage-arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/spack-src
+           /CMakeFiles/FortranCInterface/VerifyC'
+  >> 90        gmake[1]: *** [CMakeFiles/Makefile2:121: CMakeFiles/VerifyFortranC.dir/rule] Error 2
+     91        gmake[1]: Leaving directory '/tmp/shuds/spack-stage/spack-stage-arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/spack-src
+           /CMakeFiles/FortranCInterface/VerifyC'
+  >> 92        gmake: *** [Makefile:140: VerifyFortranC] Error 2
+     93    
+     94    
+     95    Call Stack (most recent call first):
+     96      CMakeLists.txt:204 (FortranCInterface_VERIFY)
+     97    
+     98    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef/spack-build-out.txt
+
+==> Warning: Skipping build of slepc-3.16.0-eel6uyj3wfpp4rnjvdulqowng3hbsjbc since arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef failed
+==> Warning: Skipping build of dealii-9.3.2-ok3lfjdhxhkzw5oq2xmgp7ewk4j6daf5 since slepc-3.16.0-eel6uyj3wfpp4rnjvdulqowng3hbsjbc failed
+==> Warning: Skipping build of butterflypack-2.0.0-wlvx76orcyuhx3vopuzailuvcez25spf since arpack-ng-3.8.0-x4w2t46fspu4d6qe57updipxgmu5ykef failed
+==> Warning: Skipping build of strumpack-6.1.0-o32pylhlcf6udrnnagldv7ruqhwubkxz since butterflypack-2.0.0-wlvx76orcyuhx3vopuzailuvcez25spf failed
+==> Warning: Skipping build of petsc-3.16.1-f5qh2qafh4kp3glbmgrgpijx2vv4dka4 since strumpack-6.1.0-o32pylhlcf6udrnnagldv7ruqhwubkxz failed
+==> Warning: Skipping build of py-petsc4py-3.16.1-5swckaw6wccok5p63vtnxsafjcgnwav3 since petsc-3.16.1-f5qh2qafh4kp3glbmgrgpijx2vv4dka4 failed
+==> Warning: Skipping build of py-libensemble-0.8.0-e2qweu6vdc4ey3cbpgyjrgse76azynzj since py-petsc4py-3.16.1-5swckaw6wccok5p63vtnxsafjcgnwav3 failed
+==> Warning: Skipping build of sundials-5.8.0-aljbf6ozo65iu5kgiu4yfhmvnouaantl since petsc-3.16.1-f5qh2qafh4kp3glbmgrgpijx2vv4dka4 failed
+==> Warning: Skipping build of amrex-21.10-y4pnve2xaqfw7lvnw5fatpzf55odmied since sundials-5.8.0-aljbf6ozo65iu5kgiu4yfhmvnouaantl failed
+==> Warning: Skipping build of mfem-4.3.0-vzp5dc7c7kxdgr3flka52nkb7imgmdmn since sundials-5.8.0-aljbf6ozo65iu5kgiu4yfhmvnouaantl failed
+==> Warning: Skipping build of pflotran-3.0.2-ylmqd2gqlom35bi6ev4kdv2ognnqosnv since petsc-3.16.1-f5qh2qafh4kp3glbmgrgpijx2vv4dka4 failed
+==> Warning: Skipping build of alquimia-1.0.9-2jruklftr5emighhqtaoe3ifgr6mykzo since pflotran-3.0.2-ylmqd2gqlom35bi6ev4kdv2ognnqosnv failed
+==> Installing tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5
+==> No binary for tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5 found: installing from source
+==> Using cached archive: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/cache/_source-cache/archive/85/85fb3a7b302ea21a3b700712767a59a623d9ab93da03308fa47d4413654c3878.tar.gz
+==> No patches needed for tasmanian
+==> tasmanian: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5' '-DCMAKE_BUILD_TYPE:STRING=Release' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5/lib64;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DTasmanian_ENABLE_OPENMP:BOOL=ON' '-DTasmanian_ENABLE_BLAS:BOOL=ON' '-DTasmanian_ENABLE_PYTHON:BOOL=OFF' '-DTasmanian_ENABLE_MPI:BOOL=ON' '-DTasmanian_ENABLE_CUDA:BOOL=OFF' '-DTasmanian_ENABLE_HIP:BOOL=OFF' '-DTasmanian_ENABLE_MAGMA:BOOL=OFF' '-DTasmanian_ENABLE_FORTRAN:BOOL=OFF' '-DBLAS_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DLAPACK_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '/tmp/shuds/spack-stage/spack-stage-tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5/spack-src'
+
+1 error found in build log:
+     10    -- Detecting CXX compile features
+     11    -- Detecting CXX compile features - done
+     12    -- Found OpenMP_CXX: -fopenmp (found version "4.5")
+     13    -- Found OpenMP: TRUE (found version "4.5")
+     14    -- Checking for LAPACK LQ factorization: not found (using QR instead)
+     15    -- Could NOT find MPI_CXX (missing: MPI_CXX_WORKS)
+  >> 16    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.
+           cmake:230 (message):
+     17      Could NOT find MPI (missing: MPI_CXX_FOUND)
+     18    Call Stack (most recent call first):
+     19      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_F
+           PHSA_FAILURE_MESSAGE)
+     20      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindMPI.cmake:1830 (find_package_handle_sta
+           ndard_args)
+     21      Config/CMakeIncludes/sanity_check_and_xsdk.cmake:171 (find_package)
+     22      CMakeLists.txt:111 (include)
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-tasmanian-7.7-ilz552grqlki343fb2rqn6v4tbmy74s5/spack-build-out.txt
+
+==> Installing plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3
+==> No binary for plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3 found: installing from source
+==> Using cached archive: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/cache/_source-cache/archive/e0/e0bb4d9143c8540f9f46cbccac9ed0cbea12500a864e6954fce2fe94ea057a10.tar.gz
+==> No patches needed for plasma
+==> plasma: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3/lib64;/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DBLAS_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DLAPACK_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DBUILD_SHARED_LIBS=ON' '/tmp/shuds/spack-stage/spack-stage-plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3/spack-src'
+
+1 error found in build log:
+     20    -- Could NOT find MKL (missing: MKL_INCLUDE_DIRS MKL_LIBRARIES)
+     21    -- Could NOT find OpenBLAS (missing: OpenBLAS_INCLUDE_DIRS)
+     22    -- Could NOT find NetlibCblas (missing: NetlibCblas_INCLUDE_DIRS NetlibCblas_LIBRARIES)
+     23    -- Looking for cblas_cgemm
+     24    -- Looking for cblas_cgemm - not found
+     25    -- Could NOT find Accelerate (missing: Accelerate_INCLUDE_DIRS Accelerate_LIBRARIES)
+  >> 26    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.
+           cmake:230 (message):
+     27      Could NOT find CBLAS (missing: CBLAS_INCLUDE_DIRS CBLAS_LIBRARIES)
+     28    Call Stack (most recent call first):
+     29      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_F
+           PHSA_FAILURE_MESSAGE)
+     30      Modules/FindCBLAS.cmake:69 (find_package_handle_standard_args)
+     31      CMakeLists.txt:74 (find_package)
+     32    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-plasma-21.8.29-6w7tem5kw5nuacsjeijfta6iw3rw4cy3/spack-build-out.txt
+
+==> Installing blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut
+==> No binary for blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut found: installing from source
+==> Using cached archive: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/cache/_source-cache/archive/11/11fc7b7e725086532ada58c0de53f30e480c2a06f1497b8081ea6d8f97e26150.tar.gz
+==> No patches needed for blaspp
+==> blaspp: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut/lib64;/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-Dbuild_tests=False' '-Duse_openmp=True' '-DBUILD_SHARED_LIBS=True' '-Dgpu_backend=none' '-DBLAS_LIBRARIES=/opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so' '-DBLA_VENDOR:STRING=CRAY' '/tmp/shuds/spack-stage/spack-stage-blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut/spack-src'
+
+1 error found in build log:
+     16    -- Not building HIP/ROCm support in BLAS++
+     17    -- Found OpenMP_CXX: -fopenmp (found version "4.5")
+     18    -- Found OpenMP: TRUE (found version "4.5")
+     19    -- Found BLAS: /opt/cray/pe/libsci/21.08.1.2/GNU/9.1/x86_64/lib/libsci_gnu.so
+     20    -- Checking BLAS library version
+     21    -- Checking BLAS complex return type
+  >> 22    CMake Error at cmake/BLASConfig.cmake:182 (message):
+     23      Error - Cannot detect zdotc return value.  Please check the BLAS
+     24      installation.
+     25    Call Stack (most recent call first):
+     26      CMakeLists.txt:377 (include)
+     27    
+     28    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut/spack-build-out.txt
+
+==> Warning: Skipping build of slate-2021.05.02-dijkhcbi4rzxdubb4slkjcmud7eq7ah3 since blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut failed
+==> Warning: Skipping build of lapackpp-2021.04.00-lnlw6maoguoyk63mmw5w243zzzsc5vcv since blaspp-2021.04.01-tzx2hbrngiq2kul2ov7funhipuonbbut failed
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/py-pip-21.3.1-d5id2cblczt25mfkhn6o3hnwex3zq2ht
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/ninja-1.10.2-xi4xktnfdbtjlkhuppzjbmckmangwmux
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/boost-1.76.0-pwcdof2gh2vimwnch5u6xnpwjdzxsuil
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libtool-2.4.6-5f4utympfqu2ituzase4idfvayzbtcw6
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/gdbm-1.19-ywzw7ligzvsqor7dgj6lnw53qspaq7ly
+==> Installing heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7
+==> No binary for heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7 found: installing from source
+==> Using cached archive: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/cache/_source-cache/archive/af/aff4f5111d3d05b269a1378bb201271c40b39e9c960c05c4ef247a31a039be58.tar.gz
+==> No patches needed for heffte
+==> heffte: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7/lib64;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/opt/cray/pe/fftw/3.3.8.12/x86_milan;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DBUILD_SHARED_LIBS:BOOL=ON' '-DHeffte_ENABLE_CUDA:BOOL=OFF' '-DHeffte_ENABLE_ROCM:BOOL=OFF' '-DHeffte_ENABLE_FFTW:BOOL=ON' '-DHeffte_ENABLE_MKL:BOOL=OFF' '-DHeffte_ENABLE_MAGMA:BOOL=OFF' '-DHeffte_ENABLE_FORTRAN:BOOL=OFF' '-DHeffte_ENABLE_PYTHON:BOOL=OFF' '-DBUILD_GPU=OFF' '/tmp/shuds/spack-stage/spack-stage-heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7/spack-src'
+
+1 error found in build log:
+     10    -- Detecting CXX compile features
+     11    -- Detecting CXX compile features - done
+     12    -- Found Git: /usr/bin/git (found version "2.26.2")
+     13    fatal: not a git repository (or any parent up to mount point /)
+     14    Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+     15    -- Could NOT find MPI_CXX (missing: MPI_CXX_WORKS)
+  >> 16    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.
+           cmake:230 (message):
+     17      Could NOT find MPI (missing: MPI_CXX_FOUND)
+     18    Call Stack (most recent call first):
+     19      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_F
+           PHSA_FAILURE_MESSAGE)
+     20      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindMPI.cmake:1830 (find_package_handle_sta
+           ndard_args)
+     21      CMakeLists.txt:73 (find_package)
+     22    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-heffte-2.2.0-aqnzbxqind6jrrxlg3y4zix64z43h2n7/spack-build-out.txt
+
+==> Installing parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy
+==> No binary for parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy found: installing from source
+==> Using cached archive: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/cache/_source-cache/archive/f2/f2d9a231b7cf97f1fee6e8c9663113ebf6c240d407d3c118c55b3633d6be6e5f.tar.gz
+==> Applied patch /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/repos/builtin/packages/parmetis/enable_external_metis.patch
+==> Applied patch /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/repos/builtin/packages/parmetis/pkg-parmetis-1c1a9fd0f408dc4d42c57f5c3ee6ace411eb222b.patch
+==> Applied patch /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/repos/builtin/packages/parmetis/pkg-parmetis-82409d68aa1d6cbc70740d0f35024aae17f7d5cb.patch
+==> parmetis: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/lib64;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/metis-5.1.0-lxe5bhakcmkcf7zuqcagulm7tihcav7q/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/metis-5.1.0-lxe5bhakcmkcf7zuqcagulm7tihcav7q;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DGKLIB_PATH:PATH=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/metis-5.1.0-lxe5bhakcmkcf7zuqcagulm7tihcav7q/include/GKlib' '-DMETIS_PATH:PATH=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/metis-5.1.0-lxe5bhakcmkcf7zuqcagulm7tihcav7q' '-DCMAKE_C_COMPILER:STRING=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc' '-DCMAKE_CXX_COMPILER:STRING=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx' '-DSHARED:BOOL=ON' '/tmp/shuds/spack-stage/spack-stage-parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/spack-src'
+
+10 errors found in build log:
+     14    -- The CXX compiler identification is GNU 11.2.0
+     15    -- Cray Programming Environment 2.7.13 C
+     16    -- Detecting C compiler ABI info
+     17    -- Detecting C compiler ABI info - failed
+     18    -- Check for working C compiler: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc
+     19    -- Check for working C compiler: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc - broken
+  >> 20    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (m
+           essage):
+     21      The C compiler
+     22    
+     23        "/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc"
+     24    
+     25      is not able to compile a simple test program.
+     26    
+
+     ...
+
+     33        Building C object CMakeFiles/cmTC_1ba6b.dir/testCCompiler.c.o
+     34        /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc    -o CMakeFiles/cmTC_1ba6b.dir/testCCompiler.c.o -c /tmp/shuds/spack-stag
+           e/spack-stage-parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/spack-build-lq5ude6/CMakeFiles/CMakeTmp/testCCompiler.c
+     35        Linking C executable cmTC_1ba6b
+     36        /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ba6b.dir/link.txt 
+           --verbose=1
+     37        /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc -dynamic CMakeFiles/cmTC_1ba6b.dir/testCCompiler.c.o -o cmTC_1ba6b
+     38        /usr/bin/ld: warning: libfabric.so.1, needed by /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so, not found (try
+            using -rpath or -rpath-link)
+  >> 39    /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_version@@FABRIC_1.0'
+  >> 40        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_dupinfo@@FABRIC_1.3'
+  >> 41        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_strerror@@FABRIC_1.0'
+  >> 42        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_freeinfo@@FABRIC_1.3'
+  >> 43        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_fabric@@FABRIC_1.1'
+  >> 44        /usr/bin/ld: /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib/libmpi_gnu_91.so: undefined reference to `fi_getinfo@@FABRIC_1.3'
+  >> 45        collect2: error: ld returned 1 exit status
+  >> 46        gmake[1]: *** [CMakeFiles/cmTC_1ba6b.dir/build.make:99: cmTC_1ba6b] Error 1
+     47        gmake[1]: Leaving directory '/tmp/shuds/spack-stage/spack-stage-parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/spack-buil
+           d-lq5ude6/CMakeFiles/CMakeTmp'
+  >> 48        gmake: *** [Makefile:127: cmTC_1ba6b/fast] Error 2
+     49    
+     50    
+     51    
+     52    
+     53    
+     54      CMake will not be able to correctly generate this project.
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy/spack-build-out.txt
+
+==> Warning: Skipping build of superlu-dist-7.1.1-zgknepagwwizrnrhoj5fi3cvmev2ccy4 since parmetis-4.0.3-lq5ude6n7ksg43sazobsy6gghvhj4vhy failed
+==> Warning: Skipping build of hypre-2.23.0-4h2fps35k5brodlhjiad6wvqhxcajjth since superlu-dist-7.1.1-zgknepagwwizrnrhoj5fi3cvmev2ccy4 failed
+==> Warning: Skipping build of trilinos-13.2.0-zlz5efmkqy24wkmhccwhyw2ofilwna2e since hypre-2.23.0-4h2fps35k5brodlhjiad6wvqhxcajjth failed
+==> Warning: Skipping build of omega-h-9.34.1-37v2yqwlh6oqjsggdtdajozazmwfw7ms since trilinos-13.2.0-zlz5efmkqy24wkmhccwhyw2ofilwna2e failed
+==> Warning: Skipping build of datatransferkit-3.1-rc3-tfybfgt6kr5n5wbw64krp3bjkllszbmo since trilinos-13.2.0-zlz5efmkqy24wkmhccwhyw2ofilwna2e failed
+==> Warning: Skipping build of phist-1.9.5-6iuqmkgmi4llcqkg4uzwfbwve5m6di2x since trilinos-13.2.0-zlz5efmkqy24wkmhccwhyw2ofilwna2e failed
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/oce-0.18.3-frhgakhsg67lvwrpvkxawdu36spdwx5c
+==> Installing arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al
+==> No binary for arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al found: installing from source
+==> Using cached archive: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/cache/_source-cache/archive/2b/2b5f2d2d5cec57c52f470c2bf4f42621b40271f870b4f80cb57e52df1acd90ce.tar.gz
+==> No patches needed for arborx
+==> arborx: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al/lib64;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/kokkos-3.5.00-twcbwdbjx53eemkonhkvps5vyujognrx/lib64;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/kokkos-3.5.00-twcbwdbjx53eemkonhkvps5vyujognrx;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DKokkos_ROOT=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/kokkos-3.5.00-twcbwdbjx53eemkonhkvps5vyujognrx' '-DARBORX_ENABLE_MPI:BOOL=ON' '/tmp/shuds/spack-stage/spack-stage-arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al/spack-src'
+
+1 error found in build log:
+     8     -- Detecting CXX compiler ABI info - done
+     9     -- Check for working CXX compiler: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/lib/spack/env/gcc/g++ - skipped
+     10    -- Detecting CXX compile features
+     11    -- Detecting CXX compile features - done
+     12    -- Enabled Kokkos devices: SERIAL
+     13    -- Could NOT find MPI_CXX (missing: MPI_CXX_WORKS)
+  >> 14    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.
+           cmake:230 (message):
+     15      Could NOT find MPI (missing: MPI_CXX_FOUND)
+     16    Call Stack (most recent call first):
+     17      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_F
+           PHSA_FAILURE_MESSAGE)
+     18      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindMPI.cmake:1830 (find_package_handle_sta
+           ndard_args)
+     19      CMakeLists.txt:43 (find_package)
+     20    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-arborx-1.1-aqh7yr3fye6yzx4nockxeaea6nb325al/spack-build-out.txt
+
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/py-wheel-0.37.0-y2n2sc3gxge7mp2ojyvky5fuxzurugrf
+==> Installing p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v
+==> No binary for p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v found: installing from source
+==> Using cached archive: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/cache/_source-cache/archive/6a/6a0586e3abac06c20e31b1018f3a82a564a6a0d9ff6b7f6c772a9e6b0f0cc5e4.tar.gz
+==> No patches needed for p4est
+==> p4est: Executing phase: 'autoreconf'
+==> p4est: Executing phase: 'configure'
+==> Error: ProcessError: Command exited with status 77:
+    '/tmp/shuds/spack-stage/spack-stage-p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v/spack-src/configure' '--prefix=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v' '--enable-shared' '--disable-vtk-binary' '--without-blas' 'CPPFLAGS=-DSC_LOG_PRIORITY=SC_LP_ESSENTIAL' 'CFLAGS=-O2' '--enable-mpi' 'CC=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc' 'CXX=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicxx' 'FC=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpif90' 'F77=/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpif77' '--disable-openmp'
+
+2 errors found in build log:
+     24    checking for mpiexec... no
+     25    checking for mpirun... no
+     26    configure:                              CC set to /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc
+     27    checking for style of include used by make... GNU
+     28    checking for gcc... /opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/bin/mpicc
+     29    checking whether the C compiler works... no
+  >> 30    configure: error: in `/tmp/shuds/spack-stage/spack-stage-p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v/spack-src':
+  >> 31    configure: error: C compiler cannot create executables
+     32    See `config.log' for more details
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-p4est-2.8-cptf2dp4vrapzdh2mzi5ebitoczapq2v/spack-build-out.txt
+
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libpciaccess-0.16-ij4jz4w3okzgtafoc2nr3xror6y32ts3
+==> Installing precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g
+==> No binary for precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g found: installing from source
+==> Using cached archive: /global/u2/s/shuds/spack_perlmutter/spack-xsdk/var/spack/cache/_source-cache/archive/57/57bab08e8b986f5faa364689d470940dbd9c138e5cfa7b861793e7db56b89da3.tar.gz
+==> No patches needed for precice
+==> precice: Executing phase: 'cmake'
+==> Error: ProcessError: Command exited with status 1:
+    'cmake' '-G' 'Unix Makefiles' '-DCMAKE_INSTALL_PREFIX:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g' '-DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo' '-DCMAKE_INTERPROCEDURAL_OPTIMIZATION:BOOL=OFF' '-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON' '-DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=OFF' '-DCMAKE_INSTALL_RPATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g/lib64;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/boost-1.76.0-pwcdof2gh2vimwnch5u6xnpwjdzxsuil/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/zlib-1.2.11-ekeupmdcqoimgroigtctln7tqkyh6pdm/lib;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh/lib;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libiconv-1.16-l4kbzvfipqrntybop73s6hhtyif53ysm/lib;/opt/cray/pe/gcc/11.2.0/snos' '-DCMAKE_PREFIX_PATH:STRING=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/pkgconf-1.8.0-kiw5m6f32d3hodo632qfgetsjk6vms7w;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libiconv-1.16-l4kbzvfipqrntybop73s6hhtyif53ysm;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/eigen-3.4.0-gdibmwmea4b6fbqdw3czxe4dkk3x3ba6;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/boost-1.76.0-pwcdof2gh2vimwnch5u6xnpwjdzxsuil;/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/zlib-1.2.11-ekeupmdcqoimgroigtctln7tqkyh6pdm;/opt/cray/pe/mpich/8.1.13/ofi/gnu/9.1;/global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0' '-DBUILD_SHARED_LIBS:BOOL=ON' '-DPRECICE_MPICommunication:BOOL=ON' '-DTPL_ENABLE_BOOST=ON' '-DBOOST_ROOT=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/boost-1.76.0-pwcdof2gh2vimwnch5u6xnpwjdzxsuil' '-DTPL_ENABLE_EIGEN3=ON' '-DEIGEN3_INCLUDE_DIR=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/eigen-3.4.0-gdibmwmea4b6fbqdw3czxe4dkk3x3ba6/include/eigen3' '-DTPL_ENABLE_LIBXML2=ON' '-DLIBXML2_INCLUDE_DIRS=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh/include/libxml2' '-DLIBXML2_LIBRARIES=/global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/libxml2-2.9.12-3laiunmvoxbfm5pr2nfjt2ume6hfq4rh/lib/libxml2.so' '-DPRECICE_PETScMapping:BOOL=OFF' '-DPRECICE_PythonActions:BOOL=OFF' '/tmp/shuds/spack-stage/spack-stage-precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g/spack-src'
+
+1 error found in build log:
+     94     -- Validating LibXml2 - success
+     95     -- Validating JSON
+     96     -- Validating JSON - success
+     97     -- Validating fmtlib
+     98     -- Validating fmtlib - success
+     99     -- Could NOT find MPI_CXX (missing: MPI_CXX_WORKS)
+  >> 100    CMake Error at /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs
+            .cmake:230 (message):
+     101      Could NOT find MPI (missing: MPI_CXX_FOUND)
+     102    Call Stack (most recent call first):
+     103      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_
+            FPHSA_FAILURE_MESSAGE)
+     104      /global/common/software/nersc/pm-2021q4/sw/cmake-3.22.0/share/cmake-3.22/Modules/FindMPI.cmake:1830 (find_package_handle_st
+            andard_args)
+     105      CMakeLists.txt:193 (find_package)
+     106    
+
+See build log for details:
+  /tmp/shuds/spack-stage/spack-stage-precice-2.3.0-fo3tnml5bj6g7rgluaimi3b7yealgr4g/spack-build-out.txt
+
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/perl-5.34.0-tjfn5srdiacnue2wb6ov27ivytuvfhz7
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/py-psutil-5.8.0-gyrs7tch7ebsgg53cm2xw2ejkhhngs4l
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/hwloc-2.7.0-kpq6bsfikamqnkwiwv3syym6hwnio5a4
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/texinfo-6.5-fapvnoume74exd5agdvqctatc5m3vl3t
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/autoconf-2.69-fu7i3o5agmgxqkfawrilqid4jj3uxuw7
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/automake-1.16.5-4gydhz5l5lp2zdyxqrm36tnd56lilimq
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/gmp-6.2.1-46weytep6blnq62jb35stqww7g7manii
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/mpfr-4.1.0-tiu6sywtytmmw7wkijs6v7xgkl7xidye
+[+] /global/u2/s/shuds/spack_perlmutter/spack-xsdk/opt/spack/cray-sles15-zen3/gcc-11.2.0/suite-sparse-5.10.1-uimtpmubowenlkiz32p4ta4lbabkckam
+==> Error: xsdk-0.7.0-ctdjrmc67jyl4lumpfeoygiv6qaq4tkm: Package was not installed
+==> Error: Installation request failed.  Refer to reported errors for failing package(s).
+shuds@login33:spack-xsdk$ 
+
+
+
+
+Heres what worked!
+
+shuds@login33:spack-xsdk$ 
+shuds@login33:spack-xsdk$ spack spec -I xsdk
+Input spec
+--------------------------------
+ -   xsdk
+
+Concretized
+--------------------------------
+ -   xsdk@0.7.0%gcc@11.2.0+alquimia+arborx+butterflypack~cuda+datatransferkit+dealii+ginkgo+heffte+libensemble+omega-h+phist+precice~rocm+slate+strumpack+trilinos arch=cray-sles15-zen3
+ -       ^alquimia@1.0.9%gcc@11.2.0~ipo+shared build_type=RelWithDebInfo arch=cray-sles15-zen3
+ -           ^cmake@3.22.0%gcc@11.2.0~doc+ncurses+openssl+ownlibs~qt build_type=Release arch=cray-sles15-zen3
+ -           ^cray-mpich@8.1.13%gcc@11.2.0 arch=cray-sles15-zen3
+ -           ^hdf5@1.12.1.1%gcc@11.2.0~cxx+fortran+hl~ipo~java+mpi+shared~szip~threadsafe+tools api=default build_type=RelWithDebInfo patches=ee351eb arch=cray-sles15-zen3
+ -           ^pflotran@3.0.2%gcc@11.2.0 arch=cray-sles15-zen3
+ -               ^petsc@3.16.1%gcc@11.2.0~X+batch~cgns~complex~cuda~debug+double~exodusii~fftw~giflib+hdf5~hpddm~hwloc+hypre~int64~jpeg~knl~kokkos~libpng~libyaml~memkind+metis~mkl-pardiso~mmg~moab~mpfr+mpi~mumps+openmp~p4est~parmmg~ptscotch~random123~rocm~saws~scalapack+shared+strumpack~suite-sparse+superlu-dist~tetgen~trilinos~valgrind clanguage=C arch=cray-sles15-zen3
+[+]                  ^cray-libsci@21.08.1.2%gcc@11.2.0~mpi~openmp+shared arch=cray-sles15-zen3
+ -                   ^diffutils@3.6%gcc@11.2.0 arch=cray-sles15-zen3
+ -                   ^hypre@2.23.0%gcc@11.2.0~complex~cuda~debug+fortran~gptune~int64~internal-superlu~mixedint+mpi~openmp+shared+superlu-dist~unified-memory arch=cray-sles15-zen3
+ -                       ^superlu-dist@7.1.1%gcc@11.2.0~cuda~int64~ipo~openmp~rocm+shared build_type=RelWithDebInfo patches=8da9e21 arch=cray-sles15-zen3
+[+]                          ^metis@5.1.0%gcc@11.2.0~gdb~int64~real64+shared build_type=Release patches=4991da9,b1225da arch=cray-sles15-zen3
+ -                           ^parmetis@4.0.3%gcc@11.2.0~gdb~int64~ipo+shared build_type=RelWithDebInfo patches=4f89253,50ed208,704b84f arch=cray-sles15-zen3
+[+]                  ^python@3.9.7%gcc@11.2.0+bz2+ctypes+dbm~debug+ensurepip+libxml2+lzma~nis~optimizations+pic+pyexpat+pythoncmd+readline+shared+sqlite3+ssl~tix~tkinter~ucs4+uuid+zlib patches=0d98e93,4c24573,ebdca64,f2fd060 arch=cray-sles15-zen3
+ -                   ^strumpack@6.1.0%gcc@11.2.0+butterflypack+c_interface~count_flops~cuda~ipo+mpi~openmp+parmetis~rocm~scotch+shared~slate~task_timers+zfp build_type=RelWithDebInfo arch=cray-sles15-zen3
+ -                       ^butterflypack@2.0.0%gcc@11.2.0~ipo+shared build_type=RelWithDebInfo arch=cray-sles15-zen3
+ -                           ^arpack-ng@3.8.0%gcc@11.2.0+mpi+shared arch=cray-sles15-zen3
+[+]                      ^zfp@0.5.5%gcc@11.2.0~aligned~c~cuda~fasthash~fortran~ipo~openmp~profile~python+shared~strided~twoway bsws=64 build_type=RelWithDebInfo arch=cray-sles15-zen3
+[+]                  ^zlib@1.2.11%gcc@11.2.0+optimize+pic+shared arch=cray-sles15-zen3
+ -       ^amrex@21.10%gcc@11.2.0~amrdata~cuda~eb+fortran~hdf5+hypre~ipo+linear_solvers+mpi+openmp~particles+petsc~pic~plotfile_tools~rocm+shared+sundials~tiny_profile build_type=RelWithDebInfo dimensions=3 precision=double arch=cray-sles15-zen3
+ -           ^sundials@5.8.0%gcc@11.2.0+ARKODE+CVODE+CVODES+IDA+IDAS+KINSOL~cuda+examples+examples-install~f2003~fcmix+generic-math+hypre~int64~ipo~klu~lapack~monitoring+mpi~openmp+petsc~pthread~raja~rocm+shared+static+superlu-dist~superlu-mt~sycl+trilinos build_type=RelWithDebInfo cstd=99 cxxstd=14 precision=double arch=cray-sles15-zen3
+ -               ^trilinos@13.2.0%gcc@11.2.0~adios2+amesos+amesos2+anasazi+aztec~basker+belos+boost~chaco~complex~cuda~cuda_rdc~debug~dtk+epetra+epetraext~epetraextbtf~epetraextexperimental~epetraextgraphreorderings~exodus+explicit_template_instantiation~float+fortran~gtest+hdf5+hypre+ifpack+ifpack2+intrepid+intrepid2~ipo+isorropia+kokkos~mesquite+minitensor+ml+mpi+muelu~mumps+nox~openmp+phalanx+piro~python~rocm~rocm_rdc+rol+rythmos+sacado~scorec+shards+shared+shylu+stk+stokhos+stratimikos~strumpack~suite-sparse~superlu+superlu-dist+teko+tempus+tpetra+trilinoscouplings~wrapper~x11+zoltan+zoltan2 build_type=RelWithDebInfo cxxstd=14 gotype=int arch=cray-sles15-zen3
+[+]                  ^boost@1.76.0%gcc@11.2.0+atomic+chrono~clanglibcpp~container~context~coroutine+date_time~debug+exception~fiber+filesystem+graph~icu+iostreams+locale+log+math~mpi+multithreaded~numpy~pic+program_options~python+random+regex+serialization+shared+signals~singlethreaded+system~taggedlayout+test+thread+timer~versionedlayout+wave cxxstd=98 patches=57a8401 visibility=hidden arch=cray-sles15-zen3
+[+]                      ^bzip2@1.0.6%gcc@11.2.0~debug~pic+shared arch=cray-sles15-zen3
+[+]                  ^hwloc@2.7.0%gcc@11.2.0~cairo~cuda~gl~libudev+libxml2~netloc~nvml~opencl+pci~rocm+shared arch=cray-sles15-zen3
+[+]                      ^libpciaccess@0.16%gcc@11.2.0 arch=cray-sles15-zen3
+[+]                          ^libtool@2.4.6%gcc@11.2.0 arch=cray-sles15-zen3
+[+]                              ^m4@1.4.18%gcc@11.2.0+sigsegv patches=3877ab5,fc9b616 arch=cray-sles15-zen3
+[+]                          ^pkgconf@1.8.0%gcc@11.2.0 arch=cray-sles15-zen3
+[+]                          ^util-macros@1.19.3%gcc@11.2.0 arch=cray-sles15-zen3
+[+]                      ^libxml2@2.9.12%gcc@11.2.0~python arch=cray-sles15-zen3
+[+]                          ^libiconv@1.16%gcc@11.2.0 libs=shared,static arch=cray-sles15-zen3
+[+]                          ^xz@5.2.3%gcc@11.2.0~pic libs=shared,static arch=cray-sles15-zen3
+[+]                      ^ncurses@6.1%gcc@11.2.0~symlinks+termlib abi=none arch=cray-sles15-zen3
+ -       ^arborx@1.1%gcc@11.2.0~cuda~ipo+mpi~openmp~rocm+serial~sycl~trilinos build_type=RelWithDebInfo arch=cray-sles15-zen3
+[+]          ^kokkos@3.5.00%gcc@11.2.0~aggressive_vectorization~compiler_warnings~cuda~cuda_constexpr~cuda_lambda~cuda_ldg_intrinsic~cuda_relocatable_device_code~cuda_uvm~debug~debug_bounds_check~debug_dualview_modify_check~deprecated_code~examples~explicit_instantiation~hpx~hpx_async_dispatch~hwloc~ipo~memkind~numactl~openmp~pic+profiling~profiling_load_print~pthread~qthread~rocm+serial+shared~sycl~tests~tuning~wrapper build_type=RelWithDebInfo std=14 arch=cray-sles15-zen3
+ -       ^datatransferkit@3.1-rc3%gcc@11.2.0~external-arborx~ipo~openmp+serial+shared build_type=RelWithDebInfo arch=cray-sles15-zen3
+ -       ^dealii@9.3.2%gcc@11.2.0~adol-c~arborx+arpack~assimp~cuda~doc+examples~ginkgo~gmsh+gsl+hdf5~int64~ipo+metis+mpi+muparser~nanoflann~netcdf+oce~optflags+p4est+petsc~python+scalapack~simplex+slepc~sundials~symengine+threads+trilinos build_type=DebugRelease cxxstd=default arch=cray-sles15-zen3
+[+]          ^gsl@2.7%gcc@11.2.0~external-cblas arch=cray-sles15-zen3
+[+]          ^intel-tbb@2020.3%gcc@11.2.0~ipo+shared+tm build_type=RelWithDebInfo cxxstd=default patches=62ba015,ce1fb16,d62cb66 arch=cray-sles15-zen3
+[+]          ^muparser@2.2.6.1%gcc@11.2.0 arch=cray-sles15-zen3
+[+]          ^ninja@1.10.2%gcc@11.2.0 arch=cray-sles15-zen3
+[+]          ^oce@0.18.3%gcc@11.2.0~X11+tbb arch=cray-sles15-zen3
+ -           ^p4est@2.8%gcc@11.2.0+mpi~openmp arch=cray-sles15-zen3
+ -           ^slepc@3.16.0%gcc@11.2.0+arpack~blopex~cuda~rocm arch=cray-sles15-zen3
+[+]          ^suite-sparse@5.10.1%gcc@11.2.0~cuda~graphblas~openmp+pic~tbb arch=cray-sles15-zen3
+[+]              ^gmp@6.2.1%gcc@11.2.0 arch=cray-sles15-zen3
+[+]                  ^autoconf@2.69%gcc@11.2.0 patches=35c4492,7793209,a49dd5b arch=cray-sles15-zen3
+[+]                      ^perl@5.34.0%gcc@11.2.0+cpanm+shared+threads arch=cray-sles15-zen3
+[+]                          ^berkeley-db@18.1.40%gcc@11.2.0+cxx~docs+stl patches=b231fcc arch=cray-sles15-zen3
+[+]                          ^gdbm@1.19%gcc@11.2.0 arch=cray-sles15-zen3
+[+]                              ^readline@7.0%gcc@11.2.0 arch=cray-sles15-zen3
+[+]                  ^automake@1.16.5%gcc@11.2.0 arch=cray-sles15-zen3
+[+]              ^mpfr@4.1.0%gcc@11.2.0 arch=cray-sles15-zen3
+[+]                  ^autoconf-archive@2019.01.06%gcc@11.2.0 arch=cray-sles15-zen3
+[+]                  ^texinfo@6.5%gcc@11.2.0 patches=12f6edb,1732115 arch=cray-sles15-zen3
+[+]      ^ginkgo@1.4.0%gcc@11.2.0~cuda~develtools~full_optimizations~hwloc~ipo~oneapi~openmp~rocm+shared build_type=Release patches=43e571a arch=cray-sles15-zen3
+ -       ^heffte@2.2.0%gcc@11.2.0~cuda+fftw~fortran~ipo~magma~mkl~python~rocm+shared build_type=RelWithDebInfo arch=cray-sles15-zen3
+ -           ^fftw@3.3.8.12%gcc@11.2.0+mpi~openmp~pfft_patches precision=double,float arch=cray-sles15-zen3
+ -       ^mfem@4.3.0%gcc@11.2.0~amgx~conduit~cuda~debug+examples~gnutls~gslib~lapack~libceed~libunwind+metis+miniapps~mpfr+mpi~netcdf~occa~openmp+petsc~pumi~raja~rocm~shared~slepc+static~strumpack~suite-sparse+sundials+superlu-dist~threadsafe~umpire+zlib patches=ccc98d6 timer=auto arch=cray-sles15-zen3
+ -       ^omega-h@9.34.1%gcc@11.2.0~examples~ipo+mpi+optimize+shared+symbols~throw+trilinos~warnings+zlib build_type=RelWithDebInfo arch=cray-sles15-zen3
+ -       ^phist@1.9.5%gcc@11.2.0~fortran~host~int64~ipo+mpi~openmp~parmetis~scamac+shared~trilinos build_type=RelWithDebInfo kernel_lib=tpetra outlev=2 arch=cray-sles15-zen3
+ -       ^plasma@21.8.29%gcc@11.2.0~ipo~lua+shared build_type=RelWithDebInfo arch=cray-sles15-zen3
+ -       ^precice@2.3.0%gcc@11.2.0~ipo+mpi~petsc~python+shared build_type=RelWithDebInfo arch=cray-sles15-zen3
+[+]          ^eigen@3.4.0%gcc@11.2.0~ipo build_type=RelWithDebInfo arch=cray-sles15-zen3
+ -       ^pumi@2.2.6%gcc@11.2.0~fortran~int64~ipo~shared+simmodsuite_version_check~testing~zoltan build_type=RelWithDebInfo simmodsuite=none arch=cray-sles15-zen3
+ -       ^py-libensemble@0.8.0%gcc@11.2.0~deap~mpi~mpmath~nlopt+petsc4py~pyyaml~scipy~tasmanian arch=cray-sles15-zen3
+ -           ^py-numpy@1.20.3%gcc@11.2.0+blas+lapack patches=873745d arch=cray-sles15-zen3
+ -           ^py-petsc4py@3.16.1%gcc@11.2.0+mpi patches=d344e0e arch=cray-sles15-zen3
+ -               ^py-mpi4py@3.1.3%gcc@11.2.0 arch=cray-sles15-zen3
+[+]              ^py-pip@21.3.1%gcc@11.2.0 arch=cray-sles15-zen3
+ -               ^py-setuptools@58.0.4%gcc@11.2.0 arch=cray-sles15-zen3
+[+]              ^py-wheel@0.37.0%gcc@11.2.0 arch=cray-sles15-zen3
+[+]          ^py-psutil@5.8.0%gcc@11.2.0 arch=cray-sles15-zen3
+ -       ^slate@2021.05.02%gcc@11.2.0~cuda~ipo+mpi+openmp~rocm+shared build_type=RelWithDebInfo arch=cray-sles15-zen3
+ -           ^blaspp@2021.04.01%gcc@11.2.0~cuda~ipo+openmp~rocm+shared build_type=RelWithDebInfo arch=cray-sles15-zen3
+ -           ^lapackpp@2021.04.00%gcc@11.2.0~ipo+shared build_type=RelWithDebInfo arch=cray-sles15-zen3
+ -       ^tasmanian@7.7%gcc@11.2.0+blas~cuda~fortran~ipo~magma+mpi+openmp~python~rocm+xsdkflags build_type=Release arch=cray-sles15-zen3
+
+
