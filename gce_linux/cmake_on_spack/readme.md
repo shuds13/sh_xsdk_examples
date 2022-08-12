@@ -4,8 +4,9 @@ This is so I can work in xsdk-examples repo.
 
 Notes:
 
-    I had to build spack xsdk with +trilinos. Trilinos did not build by default and was needed at the cmake stage.
-    The spack install line below uses --keep-stage and --test=root. This was built previously for running examples via spack so these options may not be needed here.
+I had to build spack xsdk with +trilinos. Trilinos did not build by default and was needed
+at the cmake stage. The spack install line below uses --keep-stage and --test=root. This
+was built previously for running examples via spack so these options may not be needed here.
 
 Example, all taking place in base directory of */home/shudson*.
 git cloning spack and xsdk-examples directly under that:
