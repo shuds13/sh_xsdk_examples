@@ -48,11 +48,11 @@ Basic line - for cmake did not work for me:
 
     cmake -DCMAKE_PREFIX_PATH=$SPACK_ROOT/var/spack/environments/myenv/.spack-env/view -DENABLE_CUDA=FALSE -DENABLE_HIP=FALSE -S xsdk-examples/ -B xsdk-examples/builddir
 
-I had to put in .local on my system and I had to set DPETSc_DIR for PETSc tests to work:
+I had to put in .local on my system and I had to set `-DPETSc_DIR` for PETSc tests to work:
 
     cmake -DPETSc_DIR=/home/shudson/spack/var/spack/environments/myenv/.spack-env/view -DCMAKE_INSTALL_PREFIX=/home/shudson/.local -DCMAKE_PREFIX_PATH=/home/shudson/spack/var/spack/environments/myenv/.spack-env/view -DENABLE_CUDA=FALSE -DENABLE_HIP=FALSE -S xsdk-examples/ -B xsdk-examples/builddir
 
-Now do to builddir and make and run tests:
+Now go to builddir and make and run tests:
 
     cd xsdk-examples/builddir/
     make
